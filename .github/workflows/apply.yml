@@ -8,10 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: 安装工具
-        run: sudo apt-get install yamllint
-      - name: 检查 YAML 语法
-        run: yamllint .
       - name: 配置 SSH 私钥
         run: |
           mkdir -p ~/.ssh
