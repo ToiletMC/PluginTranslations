@@ -10,7 +10,7 @@
 - CMI 的消息颜色默认是使用 `&e` 的，我们需要使用 `&6`，因为这个颜色不错，而且 [EssentialsX](https://essentialsx.net/) 也在用！
 - 【和[Minecraft 官方翻译](https://crowdin.com/editor/minecraft/10038/enus-zhcn?view=comfortable&filter=basic&value=0)风格一致】所有标点符号都应使用中文，包括逗号、句号、感叹号等等。专有名词、数字应该和中文之间最好不要有空格，例如 `你收到了6马桶币！` 。
 
-### 词汇表
+#### 词汇表
 
 | 单词 | 翻译 |
 | ---- | ---- |
