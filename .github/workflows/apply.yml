@@ -2,6 +2,9 @@ name: 应用翻译文件
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   apply-translations:
