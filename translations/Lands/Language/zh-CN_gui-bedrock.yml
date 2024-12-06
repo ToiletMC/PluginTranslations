@@ -10,17 +10,17 @@ common:
   items:
     default:
       back:
-        name: '&4返回'
+        name: "&4返回"
       close:
-        name: '&4关闭'
+        name: "&4关闭"
       disable:
-        name: '&c否'
+        name: "&c否"
       enable:
-        name: '&2是'
+        name: "&2是"
       refresh_page_next:
-        name: '&2&l下一页'
+        name: "&2&l下一页"
       refresh_page_previous:
-        name: '&4&l上一页'
+        name: "&4&l上一页"
   values:
     failure_access:
       content: |
@@ -32,16 +32,23 @@ common:
            &8• &r当前租户:&3{player}
         title: 出租或出售
       title: 不允许
-    failure_cost: '&c你没有足够的马桶币。 &r你需要&c {cost}&r。'
+    failure_cost: "&c你没有足够的马桶币。 &r你需要&c {cost}&r。"
+    failure_message:
+      content: "{message}"
+      title: Failure
     failure_noaccess:
       content: |
         &c你没有权限进行这个操作。 &r{object}&r 的所有者可以授予你的权限组权限来执行此操作。
             &8• &r开关：{flag}
       title: 不允许
-    failure_permission: '&c这个服务器不允许你这样做。'
+    failure_noaccess_owner:
+      content: Only the owner of {object}&r can do that.
+      lore: Only the owner of {object}&r can do that.
+      title: Not allowed
+    failure_permission: "&c这个服务器不允许你这样做。"
     role:
       failure_max-roles:
-        content: '&c这个区域已经达到了最大权限组数&4 {max}。'
+        content: "&c这个区域已经达到了最大权限组数&4 {max}。"
         title: 最大权限组数
       failure_nation:
         content: |
@@ -53,37 +60,30 @@ common:
           &c你没有权限编辑此权限组的设置。
            &8• &r它的优先级高于你的或者你是它的成员。
         title: 权限组优先级
-    failure_noaccess_owner:
-      title: Not allowed
-      lore: Only the owner of {object}&r can do that.
-      content: Only the owner of {object}&r can do that.
-    failure_message:
-      title: Failure
-      content: '{message}'
     success_message:
+      content: "{message}"
       title: Success
-      content: '{message}'
 common_sounds:
   set:
     failure: ENTITY_VILLAGER_NO
 general:
-  disabled: '&c禁用'
-  enabled: '&2启用'
+  disabled: "&c禁用"
+  enabled: "&2启用"
   value:
-    none: '&c无'
-    unlimited: '&2无限'
-  wNo: '&c否'
-  wYes: '&2是'
+    none: "&c无"
+    unlimited: "&2无限"
+  wNo: "&c否"
+  wYes: "&2是"
 gui:
   action-confirm:
     items:
       default:
         cancel:
-          name: '&c取消'
+          name: "&c取消"
           slot: 2
           sound_click: BLOCK_ANVIL_HIT
         confirm:
-          name: '&2确认'
+          name: "&2确认"
           slot: 1
           sound_click: ENTITY_PLAYER_LEVELUP
     title: 请确认此操作
@@ -91,7 +91,7 @@ gui:
     items:
       default:
         delete:
-          name: '&c删除'
+          name: "&c删除"
         player-management:
           name: 玩家管理
           slot: 1
@@ -102,7 +102,7 @@ gui:
           name: 出生点
         teleport:
           slot: 3
-    title: '{area}'
+    title: "{area}"
   area_players_player:
     items:
       default:
@@ -115,9 +115,9 @@ gui:
             {role}
           slot: 1
         untrust:
-          name: '&c取消信任'
+          name: "&c取消信任"
           slot: 3
-    title: '{player}'
+    title: "{player}"
   area_players_player_role:
     title: 权限组
     values:
@@ -152,8 +152,8 @@ gui:
           slot: 1
     title: 出生点
   click-response:
-    content: '{content}'
-    title: '{title}'
+    content: "{content}"
+    title: "{title}"
     values:
       failure_cost:
         content: 你需要 {cost}。
@@ -213,25 +213,25 @@ gui:
       role:
         flag:
           failure_allow-edit:
-            content: '&c服务器配置了此开关对于此权限组不可切换。'
+            content: "&c服务器配置了此开关对于此权限组不可切换。"
             title: 无法切换开关
           failure_blacklist:
             content: |
               这个开关不能由国家切换。
                &8• &r这个国家的每个领地可以单独配置它。
             title: 由领地控制的开关
+          failure_cancelled:
+            content: |
+              &cToggling this flag has been cancelled by a 3rd party plugin.
+            title: Cancelled by Plugin
           failure_edit_owner:
             content: |
               你不能为自己的所有者权限组切换此开关。
                &8• &r这可以防止你不小心剥夺自己的权限。
             title: 所有者权限组
           failure_permission:
-            content: '&c服务器不允许你在任何领地中切换此开关。'
+            content: "&c服务器不允许你在任何领地中切换此开关。"
             title: 缺少权限
-          failure_cancelled:
-            title: Cancelled by Plugin
-            content: |
-              &cToggling this flag has been cancelled by a 3rd party plugin.
       spawn:
         area:
           failure_spawn_area:
@@ -275,8 +275,8 @@ gui:
           content: 你已将出生点设置在你当前的位置。
           title: 出生点已设置
   flag_state:
-    content: '{content}'
-    title: '{title}'
+    content: "{content}"
+    title: "{title}"
     values:
       flag:
         animal_spawn:
@@ -329,6 +329,12 @@ gui:
             允许这个权限组放置方块吗?
                &8• &r解锁状态：{unlocked}
           title: 放置方块
+        block_spreading:
+          content: |
+            Allow blocks to spread into this area from other areas of this land?
+               &8• &rThis affects blocks such as amethyst blocks.
+               &8• &rBlocks from the wilderness can never spread into this area.
+          title: Block Spreading from Land
         elytra:
           content: |
             允许此权限组使用鞘翅在这个区域飞行吗?
@@ -363,13 +369,13 @@ gui:
                &8• 描述:&r
                  {desc}
                &8• &r解锁状态：{unlocked}
-          title: '{flag}'
+          title: "{flag}"
         general_player:
           content: |
             &8• &r描述:
               {desc}
             &8• &r解锁状态：{unlocked}
-          title: '{flag}'
+          title: "{flag}"
         harvest:
           content: |
             允许此权限组收获作物、树苗、浆果、甘蔗等吗?
@@ -559,12 +565,6 @@ gui:
                 &8• &r它们总是能够攻击其他怪物。
                 &8• &r解锁状态：{unlocked}
           title: 凋零攻击动物
-        block_spreading:
-          title: Block Spreading from Land
-          content: |
-            Allow blocks to spread into this area from other areas of this land?
-               &8• &rThis affects blocks such as amethyst blocks.
-               &8• &rBlocks from the wilderness can never spread into this area.
   input:
     title: Insert Text
     values:
@@ -624,7 +624,7 @@ gui:
             image: ref:player-management
             name: 成员
             slot: 2
-    title: '{level} {land}'
+    title: "{level} {land}"
   land_mainblock:
     items:
       default:
@@ -705,7 +705,7 @@ gui:
             信任
             {players} /&c {max}
           slot: 2
-    title: '{area} > Trusted Players'
+    title: "{area} > Trusted Players"
   list_area_roles:
     items:
       default:
@@ -714,7 +714,7 @@ gui:
             创建新权限组
             &8可用：{roles} / &c{max}
         entry_role:
-          name: '{role}'
+          name: "{role}"
     title: 权限组
   list_flags:
     items:
@@ -749,7 +749,7 @@ gui:
       default:
         entry_camp:
           image: textures/blocks/dirt
-          name: "营地 &2{land}&r \n&8到期时间:&5 ~{time}"
+          name: "营地 &2{land}&r\ \n&8到期时间:&5 ~{time}"
         entry_camp_edit:
           image: textures/blocks/wool_colored_green
           name: |-
@@ -817,6 +817,18 @@ gui:
           image: default
           name: Rentable Areas
     title: Main Menu
+  mainblock:
+    items:
+      default:
+        land:
+          name: Land
+        main:
+          name: Main
+        mainblock:
+          name: Edit Mainblock
+        map:
+          name: Map
+    title: "&8{level_prefix}{land}"
   object_inbox-stats:
     items:
       default:
@@ -842,12 +854,13 @@ gui:
           slot: 4
     title: Player Management
   player_edit-land:
-    content: If set as edit land， this land will be used for all following command
+    content:
+      If set as edit land， this land will be used for all following command
       executions。
     items:
       default:
         set:
-          name: '&2Set as Edit Land'
+          name: "&2Set as Edit Land"
     title: Edit Land
   player_info:
     items:
@@ -890,7 +903,7 @@ gui:
             {apply}
           slot: 6
         delete:
-          name: '&cDelete'
+          name: "&cDelete"
           slot: end
         flags_action:
           name: |-
@@ -915,10 +928,10 @@ gui:
             Pays Taxes
             {current}
           slot: 5
-    title: '{role}'
+    title: "{role}"
   toggle:
-    content: '{content}'
-    title: '{title}'
+    content: "{content}"
+    title: "{title}"
     values:
       area_players_display:
         content: |
@@ -926,15 +939,3 @@ gui:
              &8• &r如果禁用:
                它将显示整个领地的玩家。同时允许你信任或取消信任整个领地的玩家。
         title: 显示模式
-  mainblock:
-    title: '&8{level_prefix}{land}'
-    items:
-      default:
-        land:
-          name: Land
-        main:
-          name: Main
-        map:
-          name: Map
-        mainblock:
-          name: Edit Mainblock
