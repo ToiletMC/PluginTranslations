@@ -1,0 +1,940 @@
+# # This optional configuration is for the GUI that only Bedrock players will see.
+# # If you want Bedrock players to be able to join your server, you can install the Geyser and floodgate plugin: https://geysermc.org/download
+# # Please note that this is completely optional. If you don't allow Bedrock players on your server, you can ignore this file.
+# #
+# # Each button can have an icon. You can either provide a URL or path to the texture in the resource pack.
+# # More information: https://wiki.incredibleplugins.com/general/menus/bedrock-forms
+
+common:
+  entries: 25
+  items:
+    default:
+      back:
+        name: '&4返回'
+      close:
+        name: '&4关闭'
+      disable:
+        name: '&c否'
+      enable:
+        name: '&2是'
+      refresh_page_next:
+        name: '&2&l下一页'
+      refresh_page_previous:
+        name: '&4&l上一页'
+  values:
+    failure_access:
+      content: |
+        &c你没有权限执行此操作。 &r{object}&r 的所有者可以授予你的权限组权限来执行此操作。
+            &8• &r开关：{flag}
+      failure_rented:
+        content: |
+          &c在此领地被出租或出售时，你不能设置税费。
+           &8• &r当前租户:&3{player}
+        title: 出租或出售
+      title: 不允许
+    failure_cost: '&c你没有足够的马桶币。 &r你需要&c {cost}&r。'
+    failure_noaccess:
+      content: |
+        &c你没有权限进行这个操作。 &r{object}&r 的所有者可以授予你的权限组权限来执行此操作。
+            &8• &r开关：{flag}
+      title: 不允许
+    failure_permission: '&c这个服务器不允许你这样做。'
+    role:
+      failure_max-roles:
+        content: '&c这个区域已经达到了最大权限组数&4 {max}。'
+        title: 最大权限组数
+      failure_nation:
+        content: |
+          &c此权限组部分由你的国家管理。
+            &8• &r只有国家的首都可以更改此设置:&e/{cmd}
+        title: 由国家管理
+      failure_priority:
+        content: |
+          &c你没有权限编辑此权限组的设置。
+           &8• &r它的优先级高于你的或者你是它的成员。
+        title: 权限组优先级
+    failure_noaccess_owner:
+      title: Not allowed
+      lore: Only the owner of {object}&r can do that.
+      content: Only the owner of {object}&r can do that.
+    failure_message:
+      title: Failure
+      content: '{message}'
+    success_message:
+      title: Success
+      content: '{message}'
+common_sounds:
+  set:
+    failure: ENTITY_VILLAGER_NO
+general:
+  disabled: '&c禁用'
+  enabled: '&2启用'
+  value:
+    none: '&c无'
+    unlimited: '&2无限'
+  wNo: '&c否'
+  wYes: '&2是'
+gui:
+  action-confirm:
+    items:
+      default:
+        cancel:
+          name: '&c取消'
+          slot: 2
+          sound_click: BLOCK_ANVIL_HIT
+        confirm:
+          name: '&2确认'
+          slot: 1
+          sound_click: ENTITY_PLAYER_LEVELUP
+    title: 请确认此操作
+  area:
+    items:
+      default:
+        delete:
+          name: '&c删除'
+        player-management:
+          name: 玩家管理
+          slot: 1
+        settings:
+          name: 设置
+          slot: 2
+        spawn:
+          name: 出生点
+        teleport:
+          slot: 3
+    title: '{area}'
+  area_players_player:
+    items:
+      default:
+        info:
+          name: 信息
+          slot: 2
+        role:
+          name: |-
+            权限组
+            {role}
+          slot: 1
+        untrust:
+          name: '&c取消信任'
+          slot: 3
+    title: '{player}'
+  area_players_player_role:
+    title: 权限组
+    values:
+      input:
+        role: 权限组
+  area_settings:
+    items:
+      default:
+        land-settings:
+          name: 自然开关
+          slot: 2
+        roles:
+          name: 权限组
+          slot: 1
+        taxes:
+          name: 税费
+          slot: 3
+        various:
+          name: |-
+            其他设置
+            名称，描述，图标
+          slot: 4
+    title: 设置
+  area_spawn:
+    items:
+      default:
+        set:
+          name: 设置
+          slot: 2
+        teleport:
+          name: 传送
+          slot: 1
+    title: 出生点
+  click-response:
+    content: '{content}'
+    title: '{title}'
+    values:
+      failure_cost:
+        content: 你需要 {cost}。
+        title: 你没有足够的马桶币
+      mainblock:
+        failure_mainblock_claim:
+          content: 主方块必须放置在领地内。
+          title: 必须放置在领地内
+        failure_mainblock_space:
+          content: 在你当前的位置没有足够的空间放置它。
+          title: 必须放置在领地内
+      player:
+        untrust:
+          failure_access:
+            content: |
+              &c你没有权限取消信任玩家。
+                 &8• &r领地所有者可以给予你的权限组此权限。
+            name: 不允许
+          failure_edit:
+            content: |
+              你不能编辑这个玩家。
+                 &8• &r他们的权限组&6 {role}&r 优先级高于或和你相等。
+            title: 权限组优先级
+          failure_max-players:
+            content: |
+              这块领地已经达到了他们的最大成员数&3 {max} &r。
+            title: 最大信任玩家数
+          failure_owner:
+            content: |
+              &c所有者不能不受信任。
+                &8• &r可以通过执行&e/{cmd}&r来设置新的所有者。
+            title: 所有者
+          failure_priority:
+            content: |
+              你没有权限编辑此权限组的设置。
+                 &8• &r该权限组的优先级高于你的，或者你是相同权限组的成员。
+            title: 权限组优先级
+          failure_rented:
+            content: |
+              &c你不能取消对租客&4 {player}&c在区域&4{area}&c的信任。
+                 &8• &r要移除该区域的出租状态，请站在区域内使用&e/{cmd}&r。
+            title: 已出租
+          failure_self:
+            content: |
+              要离开领地，请使用&e/{cmd}&r。
+            title: 不能取消信任自己
+          failure_setrole:
+            content: |
+              &c你不能设置任何权限组。
+                 &8• &r领地所有者可以给予你的权限组此权限。
+            title: 不允许
+          failure_tenant:
+            content: |
+              &c租户不能不受信任或更改他们的权限组。
+                &8• &r可以通过执行&e/{cmd}&r来删除租户。
+            title: 租户
+      role:
+        flag:
+          failure_allow-edit:
+            content: '&c服务器配置了此开关对于此权限组不可切换。'
+            title: 无法切换开关
+          failure_blacklist:
+            content: |
+              这个开关不能由国家切换。
+               &8• &r这个国家的每个领地可以单独配置它。
+            title: 由领地控制的开关
+          failure_edit_owner:
+            content: |
+              你不能为自己的所有者权限组切换此开关。
+               &8• &r这可以防止你不小心剥夺自己的权限。
+            title: 所有者权限组
+          failure_permission:
+            content: '&c服务器不允许你在任何领地中切换此开关。'
+            title: 缺少权限
+          failure_cancelled:
+            title: Cancelled by Plugin
+            content: |
+              &cToggling this flag has been cancelled by a 3rd party plugin.
+      spawn:
+        area:
+          failure_spawn_area:
+            content: |
+              出生点必须在区域内设置。
+               &8• &r你当前不在区域内。
+            title: 必须在区域内
+          failure_spawn_cooldown:
+            content: 你必须再等待&5 {time} &r才能再次传送到任何区域出生点。
+            title: 冷却时间
+          failure_spawn_none:
+            content: 这个区域还没有设置出生点
+            title: 没有设置出生点
+        failure_spawn_cooldown:
+          content: 你必须再等待&5 {time} &r才能再次传送到任何领地出生点。
+          title: 冷却时间
+        failure_spawn_cost:
+          content: 你需要支付&r {cost}&r 以进行出生点传送。
+          title: 没有足够的马桶币
+        failure_spawn_none:
+          content: |
+            这块土地还没有设置出生点。
+             &8• &r设置出生点:&e/lands setspawn
+          title: 没有设置出生点
+        failure_spawn_teleport:
+          content: |
+            你不被允许传送到这个特定的领地出生点。
+             &8• &r领地所有者可以给予你此权限。
+          title: 不允许传送
+        failure_spawn_war:
+          content: |
+            你目前不能传送到这个特定的领地出生点。
+             &8• &r他们目前正在进行一场战争，将在&5 {time}&r后结束。
+          title: 正在进行的战争
+        failure_teleport_enter:
+          content: |
+            你不被允许进入目的地所在的区域。
+             &8• &r领地所有者可以给予你此权限。
+          title: 禁止入内
+        success_spawn_set:
+          content: 你已将出生点设置在你当前的位置。
+          title: 出生点已设置
+  flag_state:
+    content: '{content}'
+    title: '{title}'
+    values:
+      flag:
+        animal_spawn:
+          content: |
+            &8✖ &r允许动物生成吗?
+                &8• &r刷怪笼不受此开关影响。
+                &8• &r解锁状态：{unlocked}
+          title: 动物生成
+        area_assign:
+          content: |
+            &r允许这个权限组创建区域和调整区域大小吗?
+               &8• &r解锁状态：{unlocked}
+          title: 创建区域
+        attack_animal:
+          content: |
+            允许这个权限组攻击动物吗?
+               &8• &r解锁状态：{unlocked}
+          title: 攻击动物
+        attack_monster:
+          content: |
+            允许此权限组攻击怪物吗?
+               &8• &r如果禁用:怪物也无法攻击他们。
+               &8• &r解锁状态：{unlocked}
+          title: 攻击怪物
+        attack_player:
+          content: |
+            允许此权限组攻击其他玩家吗?
+               &8• &r战斗标记:如果一个玩家在区域外攻击了另一个玩家，可能仍然有可能在你的领地内战斗。
+               &8• &r冲突开关:他们只能攻击那些也能够攻击他们的玩家。
+               &8• &r解锁状态：{unlocked}
+          title: 攻击玩家
+        balance_withdraw:
+          content: |
+            允许此权限组从领地银行取钱吗?
+               &8• &r命令: &e/lands withdraw
+               &8• &r解锁状态：{unlocked}
+          title: 取款
+        block_break:
+          content: |
+            允许这个权限组破坏方块吗?
+               &8• &r解锁状态：{unlocked}
+          title: 破坏方块
+        block_ignite:
+          content: |
+            允许此权限组点燃方块吗?
+               &8• &r解锁状态：{unlocked}
+          title: 点燃方块
+        block_place:
+          content: |
+            允许这个权限组放置方块吗?
+               &8• &r解锁状态：{unlocked}
+          title: 放置方块
+        elytra:
+          content: |
+            允许此权限组使用鞘翅在这个区域飞行吗?
+               &8• &r解锁状态：{unlocked}
+          title: 使用鞘翅
+        ender_pearl:
+          content: |
+            允许此权限组使用末影珍珠和紫颂果在这个区域内传送吗?
+               &8• &r解锁状态：{unlocked}
+          title: 末影珍珠
+        entity_griefing:
+          content: |
+            &8✖ &r允许实体破坏方块吗?
+                &8• &r如果启用:苦力怕将能够摧毁你的建筑物，闪电会造成伤害等等。
+                &8• &r解锁状态：{unlocked}
+          title: 实体破坏
+        fire_spread:
+          content: |
+            &8✖ &7允许火焰在你的领地内的蔓延吗？
+                &8• &r如果禁用:来自荒野的火焰将无法蔓延进你的领地。
+                &8• &r解锁状态：{unlocked}
+          name: 火焰蔓延
+          title: Fire Spread
+        fly:
+          content: |
+            允许此权限组在这个区域使用&e/fly吗?
+               &8• &r解锁状态：{unlocked}
+          title: 飞行
+        general_admin:
+          content: |
+            这是一个管理员开关。它只适用于管理员领地和&e/lands admin wilderness&r。
+               &8• 描述:&r
+                 {desc}
+               &8• &r解锁状态：{unlocked}
+          title: '{flag}'
+        general_player:
+          content: |
+            &8• &r描述:
+              {desc}
+            &8• &r解锁状态：{unlocked}
+          title: '{flag}'
+        harvest:
+          content: |
+            允许此权限组收获作物、树苗、浆果、甘蔗等吗?
+               &8• &r解锁状态：{unlocked}
+          title: 收获
+        interact_container:
+          content: |
+            允许这个权限组打开容器吗?
+               &8• &r解锁状态：{unlocked}
+          title: 打开容器
+        interact_door:
+          content: |
+            允许这个权限组打开门吗?
+               &8• &r解锁状态：{unlocked}
+          title: 打开门
+        interact_general:
+          content: |
+            允许此权限组与未被其他开关覆盖的方块互动吗?
+               &8• &r解锁状态：{unlocked}
+          title: 普通交互
+        interact_mechanism:
+          content: |
+            允许此权限组使用红石机器，比如杠杆等吗?
+               &8• &r解锁状态：{unlocked}
+          title: 使用红石
+        interact_trapdoor:
+          content: |
+            允许这个权限组打开活板门吗?
+               &8• &r解锁状态：{unlocked}
+          title: 打开活板门
+        interact_villager:
+          content: |
+            允许此权限组与村民交易吗?
+               &8• &r解锁状态：{unlocked}
+          title: 与村民交易
+        item_pickup:
+          content: |
+            允许这个权限组从地面上拾取物品吗?
+               &8• &r解锁状态：{unlocked}
+          title: 拾取物品
+        land_claim:
+          content: |
+            允许此权限组认领和取消认领这个领地的区块吗?
+               &8• &r解锁状态：{unlocked}
+          title: 认领和取消认领
+        land_claim_border:
+          content: |
+            允许此权限组直接在这块领地的边界上认领区块吗?
+               &8• &r解锁状态：{unlocked}
+          title: 在边界认领领地
+        land_enter:
+          content: |
+            允许此权限组进入这个区域吗?
+               &8• 不管这个开关是否开启，如果战斗开关处于开启状态并且你正在战斗中，玩家可能仍然可以进入你的领地。
+               &8• &r解锁状态：{unlocked}
+          title: 进入区域
+        leaf_decay:
+          content: |
+            &8✖ &r树叶是否会在你的领地内腐烂?
+                &8• &r解锁状态：{unlocked}
+          title: 树叶腐烂
+        monster_spawn:
+          content: |
+            &8✖ &r允许怪物自然生成。
+                &8• &r刷怪笼不受此开关影响。
+                &8• &r解锁状态：{unlocked}
+          title: 怪物生成
+        phantom_spawn:
+          content: |
+            &8✖ &r允许幻翼自然生成。
+                &8• &r刷怪笼不受此开关影响。
+                &8• &r解锁状态：{unlocked}
+          title: 幻翼生成
+        piston_griefing:
+          content: |
+            &8✖ &r允许来自荒野的活塞推动进入你的领地吗?
+                &8• &r如果启用:玩家将能够通过在荒野放置活塞来破坏你的领地。
+                &8• &r解锁状态：{unlocked}
+          title: 来自荒野的活塞
+        plant:
+          content: |
+            允许此权限组种植作物、树苗、浆果、甘蔗等吗?
+               &8• &r解锁状态：{unlocked}
+          title: 种植
+        plant_growth:
+          content: |
+            &8✖ &r植物是否应该生长?
+              &8• &r解锁状态：{unlocked}
+          title: 植物生长
+        player_ban:
+          content: |
+            允许这个权限组封禁或解封玩家吗?
+               &8• &r他们无法封禁比他们优先级更高的玩家。
+               &8• &r解锁状态：{unlocked}
+          title: 封禁管理
+        player_setrole:
+          content: |
+            允许此权限组为信任的玩家设置权限组吗?
+               &8• &r他们将无法编辑比他们优先级更高的权限组。
+               &8• &r解锁状态：{unlocked}
+          title: 设置权限组
+        player_trust:
+          content: |
+            允许此权限组信任其他玩家吗?
+               &8• &r解锁状态：{unlocked}
+          title: 信任玩家
+        player_untrust:
+          content: |
+            允许此权限组取消信任玩家吗?
+               &8• 他们将无法取消信任拥有更高权限组或是相同权限组的玩家。
+               &8• &r解锁状态：{unlocked}
+          title: 取消信任玩家
+        setting_edit_land:
+          content: |
+            允许这个权限组编辑自然开关吗?
+               &8• &r解锁状态：{unlocked}
+          title: 切换自然开关
+        setting_edit_role:
+          content: |
+            允许这个权限组编辑权限组设置、开关和创建新权限组吗?
+               &8• &r他们将无法编辑自己的权限组开关。
+               &8• &r你应该只将此开关授予值得信任的玩家。
+               &8• &r解锁状态：{unlocked}
+          title: 切换权限组开关和设置
+        setting_edit_taxes:
+          content: |
+            允许这个权限组编辑税费吗?
+               &8• &r你应该只将此权限授予值得信任的玩家。
+               &8• &r解锁状态：{unlocked}
+          title: 编辑税费
+        setting_edit_various:
+          content: |
+            允许此权限组编辑其他设置，比如名称等吗?
+               &8• &r解锁状态：{unlocked}
+          title: 编辑其他设置
+        shear:
+          content: |
+            允许此权限组修剪绵羊、哞菇等吗?
+               &8• &r解锁状态：{unlocked}
+          title: 修剪生物
+        snow_melt:
+          content: |
+            &8✖ &r雪和冰是否应该融化?
+                &8• &r如果禁用:下雪和雪傀儡不会覆盖地面上的雪。
+                &8• &r解锁状态：{unlocked}
+          title: 雪融化
+        spawn_set:
+          content: |
+            允许此权限组编辑这块领地的出生点吗?
+               &8• &r解锁状态：{unlocked}
+          title: 设置出生点
+        spawn_teleport:
+          content: |
+            允许这个权限组传送到这块领地的出生点吗?
+               &8• &r解锁状态：{unlocked}
+          title: 传送到出生点
+        tnt_griefing:
+          content: |
+            &8✖ &r允许TNT方块破坏方块吗?
+                &8• &r如果启用:玩家将能够发射TNT进入并破坏你的领地。
+                &8• &r解锁状态：{unlocked}
+          title: TNT方块破坏
+        trample_farmland:
+          content: |
+            允许此权限组踩坏耕地吗?
+               &8• &r解锁状态：{unlocked}
+          title: 踩坏耕地
+        vehicle_use:
+          content: |
+            允许这个权限组使用载具吗?
+               &8• &r解锁状态：{unlocked}
+          title: 使用载具
+        war_manage:
+          content: |
+            允许此权限组为你的领地宣战和管理战争吗?
+               &8• &r解锁状态：{unlocked}
+          title: 管理战争
+        waterflow_allow:
+          content: |
+            &8✖ &r允许来自荒野或其他领地的水和熔岩进入你的领地吗?
+                &8• &r如果启用:玩家将能够在你的领地外放置水和熔岩流入并破坏你的领地。
+                &8• &r解锁状态：{unlocked}
+          title: 水和熔岩的流入
+        wither_attack_animal:
+          content: |
+            &8✖ &r凋零是否应该能够伤害动物?
+                &8• &r它们总是能够攻击其他怪物。
+                &8• &r解锁状态：{unlocked}
+          title: 凋零攻击动物
+        block_spreading:
+          title: Block Spreading from Land
+          content: |
+            Allow blocks to spread into this area from other areas of this land?
+               &8• &rThis affects blocks such as amethyst blocks.
+               &8• &rBlocks from the wilderness can never spread into this area.
+  input:
+    title: Insert Text
+    values:
+      input: Text
+  land:
+    items:
+      default:
+        areas:
+          image: default
+          name: 区域
+          slot: 1
+        edit:
+          image: default
+          name: |-
+            设置为命令领地
+            当前状态：{status}
+          slot: 7
+        inbox-stats:
+          image: default
+          name: 收件箱和统计信息
+          slot: 6
+        level:
+          image: default
+          name: 等级
+          slot: 4
+        level_camp:
+          image: default
+          name: |-
+            等级
+            &c营地不能有等级。
+          slot: 4
+        mainblock:
+          image: default
+          name: 编辑主方块
+          slot: 8
+        mainblock_set:
+          image: default
+          name: |-
+            &2放置主方块
+            &8在你当前的位置。
+          slot: 8
+        player-management:
+          image: default
+          name: 玩家管理
+          slot: 2
+        settings:
+          image: default
+          name: 设置
+          slot: 3
+        spawn:
+          image: default
+          name: 出生点传送
+          slot: 5
+      patches:
+        basic:
+          members:
+            image: ref:player-management
+            name: 成员
+            slot: 2
+    title: '{level} {land}'
+  land_mainblock:
+    items:
+      default:
+        hologram:
+          name: |-
+            切换全息投影:
+            {status}
+          slot: 1
+        reposition:
+          name: |-
+            &c重新放置主方块
+            &8或将其删除。
+          slot: 2
+    title: 主方块
+  land_settings:
+    items:
+      default:
+        land-settings:
+          name: |-
+            Natural Flags of Area
+            &6{area}
+          slot: 2
+        relations:
+          name: Relations
+          slot: 4
+        relations_camp:
+          name: |-
+            Relations
+            &cCamps don't have relations。
+          slot: 4
+        roles:
+          name: |-
+            Roles of Area
+            &6{area}
+          slot: 1
+        taxes:
+          name: |-
+            Taxes of Area
+            &6{area}
+          slot: 3
+        various:
+          name: |-
+            Miscellaneous Settings
+            Name， enter message etc。
+          slot: 5
+    title: Options
+  land_stats:
+    content: |
+      出生点：{world}， x={x}， z={z}
+      国家：{nation}
+      认领：{chunks} / {chunks_max}
+      成员：{members} / {members_max}
+      &6经济:
+      &8• &7领地&r
+         余额：{balance}
+         下一个认领成本：{chunk_cost}
+        距离缴纳&c {upkeep}&r 的维护费用还剩:
+         {upkeep_next}
+      &8• &4你&r
+         余额：{balance_player}
+         距离缴纳&c {taxes}&r 的税款还剩:
+         {taxes_next}
+    title: 统计信息
+  list_area_players:
+    items:
+      default:
+        entry_player:
+          name: |-
+            {player}
+            {role}
+        toggle:
+          name: |-
+            只查看区域
+            {current}
+          slot: 1
+        trust:
+          name: |-
+            信任
+            {players} /&c {max}
+          slot: 2
+    title: '{area} > Trusted Players'
+  list_area_roles:
+    items:
+      default:
+        create:
+          name: |-
+            创建新权限组
+            &8可用：{roles} / &c{max}
+        entry_role:
+          name: '{role}'
+    title: 权限组
+  list_flags:
+    items:
+      default:
+        entry_general_admin:
+          name: |-
+            {flag}
+            {enabled}
+        entry_general_player:
+          name: |-
+            {flag}
+            {enabled}
+    title: 开关
+  list_land_areas:
+    items:
+      default:
+        create:
+          name: |-
+            创建区域
+            &8{areas} /&c {max}
+        entry_area:
+          name: |-
+            &6{area}
+            &8{description}
+        entry_area-setup:
+          name: |-
+            &c{area}
+            &8设置: &e/{cmd}
+    title: 区域
+  list_player_lands:
+    items:
+      default:
+        entry_camp:
+          image: textures/blocks/dirt
+          name: "营地 &2{land}&r \n&8到期时间:&5 ~{time}"
+        entry_camp_edit:
+          image: textures/blocks/wool_colored_green
+          name: |-
+            Camp &2{land}&r
+            &8Set as edit/command land。
+        entry_camp_own:
+          image: textures/blocks/dirt
+          name: |-
+            &Camp &2{land}&r
+            &8Expires in:&5 ~{time}
+        entry_land:
+          image: textures/blocks/grass_carried
+          name: |-
+            Land &2{land}&r
+            &8You're trusted in this land。
+        entry_land_edit:
+          image: textures/blocks/wool_colored_green
+          name: |-
+            Land &2{land}&r
+            &8Set as edit/command land。
+        entry_land_own:
+          image: textures/blocks/grass_carried
+          name: |-
+            Land &2{land}&r
+            &8You own this land。
+    title: Your Lands
+  main:
+    items:
+      default:
+        all-lands:
+          image: default
+          name: |-
+            All Lands
+            {lands}
+        all-nations:
+          image: default
+          name: |-
+            All Nations
+            {nations}
+        flags:
+          image: default
+          name: Personal Settings
+        invites:
+          image: default
+          name: |-
+            Received Invites
+            {invites}
+        lands:
+          image: default
+          name: |-
+            Your Lands
+            own：{own}， trusted：{trusted}
+        limitations:
+          image: default
+          name: Your Limitations
+        map:
+          image: default
+          name: Claims Map
+        nations:
+          image: default
+          name: |-
+            Your Nations
+            own：{own}， trusted：{trusted}
+        rentable:
+          image: default
+          name: Rentable Areas
+    title: Main Menu
+  object_inbox-stats:
+    items:
+      default:
+        inbox:
+          name: Events and Info ({amount})
+        stats:
+          name: Statistics
+    title: Inbox and Stats
+  player-management:
+    items:
+      default:
+        banned:
+          name: Banned Players
+          slot: 2
+        invites:
+          name: Sent Invites
+          slot: 3
+        members:
+          name: Members
+          slot: 1
+        membership-requests:
+          name: Membership Requests
+          slot: 4
+    title: Player Management
+  player_edit-land:
+    content: If set as edit land， this land will be used for all following command
+      executions。
+    items:
+      default:
+        set:
+          name: '&2Set as Edit Land'
+    title: Edit Land
+  player_info:
+    items:
+      default:
+        areas:
+          name: |-
+            Trusted in {amount}
+            areas of land
+        lands:
+          name: |-
+            Lands
+            {amount}
+        max-chunks:
+          name: |-
+            Supports lands with
+            {chunks} chunks
+        time:
+          name: |-
+            Last seen：{seen}
+            Offline since：{offline}
+    title: Information
+  player_limitations:
+    content: |
+      &8• &rCreate&3 {ownlands} &rlands:
+        &e/lands create
+      &8• &rClaim&3 {chunks} &rchunks per land:
+        &e/lands claim
+      &8• &rHave&3 {members} &rmembers per land:
+        &e/lands trust
+      &8• &rJoin&3 {lands} &rlands:
+        &e/lands accept
+      &8• &rSupport lands， in which you''re trusted， with &3{support-chunks} &radditional claims。
+    title: Your Limitations
+  role:
+    items:
+      default:
+        apply:
+          name: |-
+            Apply to new Areas
+            {apply}
+          slot: 6
+        delete:
+          name: '&cDelete'
+          slot: end
+        flags_action:
+          name: |-
+            Action Flags
+            Block placement etc。
+          slot: 2
+        flags_management:
+          name: |-
+            Management Flags
+            Trusting players etc。
+          slot: 3
+        members:
+          name: Members
+          slot: 1
+        name:
+          name: |-
+            Name
+            {name}
+          slot: 4
+        taxes:
+          name: |-
+            Pays Taxes
+            {current}
+          slot: 5
+    title: '{role}'
+  toggle:
+    content: '{content}'
+    title: '{title}'
+    values:
+      area_players_display:
+        content: |
+          仅显示在此区域受信任的玩家 &8(&6{area}&8)&r?
+             &8• &r如果禁用:
+               它将显示整个领地的玩家。同时允许你信任或取消信任整个领地的玩家。
+        title: 显示模式
+  mainblock:
+    title: '&8{level_prefix}{land}'
+    items:
+      default:
+        land:
+          name: Land
+        main:
+          name: Main
+        map:
+          name: Map
+        mainblock:
+          name: Edit Mainblock

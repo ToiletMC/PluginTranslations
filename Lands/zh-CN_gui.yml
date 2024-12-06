@@ -1,0 +1,3352 @@
+# Here you can edit all GUI menus.
+#
+# If you encounter any issues or have questions:
+# Discord: https://discord.incredibleplugins.com
+#
+# Wiki: https://wiki.incredibleplugins.com/general/menus/gui-menus
+
+common:
+  auto-correct: true
+  entries: 10-36
+  items:
+    default:
+      back:
+        lore: []
+        material: skin:http://textures.minecraft.net/texture/7becf3aafd78a84394ad3775e6a9873f00eb96edc269cfcb2ed9cc7813af3a2c
+        name: '&c&l返回'
+        slots: 37
+      category:
+        lore:
+        - '&8✖ &7更改领地的分类。'
+        - '  &8• &7其他人可以通过此分类在'
+        - '  &3/lands list &7菜单中筛选你的领地。'
+        material: BOOKSHELF
+        name: '&6&l领地类型：{category}'
+        slots: 40
+      category_members:
+        lore:
+        - '&8✖ &7更改领地的分类。'
+        - '  &8• &7其他人可以通过此分类在'
+        - '  &3/lands list &7菜单中筛选你的领地。'
+        - ''
+        - '  &8• &7如果领地的分类设置为 &7{looking}'
+        - '  &7其他人可以在 &3/lands list'
+        - '  &7菜单中请求加入此领地。'
+        material: BOOKSHELF
+        name: '&6&l领地类型：{category}'
+        slots: 40
+      child_failure_cost:
+        lore:
+        - '&7你需要&c {cost} &7来做这个。'
+        name: '&4&l马桶币不足'
+      child_failure_current-war:
+        lore:
+        - '&7在 {object} &7参与战争的时候'
+        - '&7你不能这么做。'
+        name: '&4&l正在发生战争'
+      child_failure_land_max-members:
+        lore:
+        - 你不能成为&c领地&4 {object}&c中的信任成员。
+        - ' &8• &7他们已达到了最大的[ newline]   &7成员数量。'
+        name: '&4&l已达到最大成员数'
+      child_failure_membership-request_not-looking:
+        lore:
+        - '&c这块领地不在寻找'
+        - '&c新成员。'
+        name: '&4&l不寻找成员'
+      child_failure_message:
+        lore:
+        - '{message}'
+        name: '&4&l失败'
+      child_failure_no-item:
+        lore:
+        - '&7你需要从你的物品栏'
+        - '&7拖拽一个物品。'
+        name: '&4&l光标处没有物品'
+      child_failure_noaccess:
+        lore:
+        - '&c你不被允许做这样做。'
+        - ' &8• &7{object}的所有者可以给予你的'
+        - '   &7权限组相应的权限来进行此操作。'
+        - '   &7开关：{flag}'
+        name: '&4&l不允许'
+      child_failure_page_next:
+        name: '&4&l没有下一页了'
+      child_failure_page_previous:
+        name: '&4&l没有上一页了'
+      child_failure_permission:
+        lore:
+        - '&c你没有这么做'
+        - '&c的权限。'
+        name: '&4&l缺少权限'
+      child_failure_player_banned:
+        lore:
+        - '&c你不能加入这个领地，'
+        - '&c因为他们已经将你封禁了。'
+        name: '&4&你被封禁了'
+      child_failure_player_max-lands:
+        lore:
+        - '&c你不能加入更多的领地了。'
+        - ' &8• &7你已经达到了同时可以被信任的'
+        - '   &c领地的最大数量。'
+        name: '&4&l领地最大数量'
+      child_failure_player_own-land:
+        lore:
+        - '&c当你是一个领地的主人时，你不能加入另一个领地。'
+        - '&c你必须先删除它:'
+        - '   &3/lands delete'
+        name: '&4&l你拥有一个领地'
+      child_failure_player_trusted:
+        lore:
+        - '&7你已经是这片领地的一部分。'
+        name: '&4&l已信任'
+      child_failure_spawn_cooldown:
+        lore:
+        - '&c你必须再等待&4 {time}'
+        - '&c才能再次传送到任何'
+        - '&c领地出生点。'
+        name: '&4&l冷却时间'
+      child_failure_spawn_cost:
+        lore:
+        - '&7你需要&c {cost} &7来支付'
+        - '&7传送的费用。'
+        name: '&4&l马桶币不足'
+      child_failure_spawn_none:
+        lore:
+        - '&c这块领地还没有设置出生点。'
+        - ' &8• &7设置出生点:'
+        - '   &e/lands setspawn'
+        name: '&4&l找不到出生点'
+      child_failure_spawn_teleport:
+        lore:
+        - '&c你不被允许传送到这个特定的领地出生点。'
+        - '&c领地主可以给予你的'
+        - '&7权限组相应的权限来进行此操作。'
+        name: '&4&l不允许传送'
+      child_failure_spawn_war:
+        lore:
+        - '&c你目前无法传送到'
+        - '&c这个特定的领地出生点。'
+        - ' &8• &7他们目前正处于一场战争中，'
+        - '   &7战争将在&5 {time}&7后结束。'
+        name: '&4&l正在进行的战争'
+      child_failure_teleport_enter:
+        lore:
+        - '&c你没有权限进入包含目的地的区域。'
+        - ' &8• &7领地所有者可以授予你的权限组此权限。'
+        name: '&4&l禁止入内'
+      child_success_membership-request_revoked:
+        lore:
+        - '&7成功撤销你的'
+        - '&7加入申请。'
+        name: '&c加入请求已撤销'
+      child_success_membership-request_sent:
+        lore:
+        - '&7他们现在可以接受你的加入'
+        - '&7申请。'
+        name: '&a已发送加入申请'
+      child_success_message:
+        lore:
+        - '{message}'
+        name: '&a&l成功'
+      child_success_player_trusted:
+        lore:
+        - '&7领地&2 {land} &7自动'
+        - '&7接受了你的请求。'
+        - ' &8• &7离开领地:'
+        - '   &e/lands leave'
+        name: '&a你现在被信任了'
+      placeholder_1:
+        material: GRAY_STAINED_GLASS_PANE
+        slots: 1-45
+      refresh_page_next:
+        lore:
+        - '&8✖ &7当前：{current} / {pages}'
+        material: ARROW
+        name: '&a&l下一页'
+        slots: 44
+      refresh_page_previous:
+        lore:
+        - '&8✖ &7当前：{current} / {pages}'
+        material: ARROW
+        name: '&c&l上一页'
+        slots: 38
+      child_failure_teleport_unsafe:
+        name: '&4&lUnsafe'
+        lore:
+        - '&cCouldn''t teleport to this destination,'
+        - '&cbecause it''s not safe.'
+      child_failure_global-action:
+        name: '&4&lDisplay all Areas enabled'
+        lore:
+        - '&cCan''t disable this, if you''re viewing entries'
+        - '&cfor all areas. &7Enable "&6&lView only area&7"'
+        - '&7to change this.'
+      war_attackers:
+        lore:
+        - '&8✖ &7View all attacking lands.'
+        - '   &7Players: {players}'
+        - ''
+        - '&6&lProgress'
+        - ' &8• &7Captures: {cap}'
+        - ' &8• &7Kills: {kills}'
+        - '   &3= {points} / {towin} &7points to win'
+        - '   {bar}'
+        name: '&c&lAttacker {object}'
+      war_defenders:
+        lore:
+        - '&8✖ &7View all defending lands.'
+        - '   &7Players: {players}'
+        - ''
+        - '&6&lProgress'
+        - ' &8• &7Captures: {cap}'
+        - ' &8• &7Kills: {kills}'
+        - '   &3= {points} / {towin} &7points to win'
+        - '   {bar}'
+        name: '&a&lDefender {object}'
+      war_points:
+        lore:
+        - '&7A team needs&3 {points} &7points to win.'
+        - ' &8• &7Kill: &3{p_kill} point(s)'
+        - ' &8• &7Capture: &3{p_cap} point(s)'
+        - '    &8• &7To capture an enemy area, place'
+        - '      &7a capture flag inside it. You'
+        - '      &7can see the crafting recipe'
+        - '      &7for it in this menu.'
+        - ''
+        - ' &8• &7If no team reaches {points} points, the war'
+        - '   &7will timeout in&5 {time}&7.'
+        name: '&6&lPoint Distribution'
+      child_failure_noaccess_owner:
+        name: '&4&lNot allowed'
+        lore:
+        - '&7Only the owner of {object}&7 can do that.'
+      child_failure_teleport:
+        name: '&4&lTeleportation failed'
+        lore:
+        - '&7The teleportation failed because of'
+        - '&7the following cause: {result}'
+  size: 45
+common_sounds:
+  set:
+    failure: ENTITY_VILLAGER_NO
+    success: ENTITY_PLAYER_LEVELUP
+general:
+  all: '&a全部'
+  directions:
+    east: 东
+    north: 北
+    south: 南
+    west: 西
+  disabled: '&c否'
+  enabled: '&a是'
+  inbox-filter:
+    economy: '&c经济 $'
+    members: '&e成员 ☺'
+    posts: '&7消息'
+    relations: '&a关系'
+    war: '&4战争 ⚔'
+    general: 一般
+    storage: '&7Storage'
+  nation:
+    managed:
+      land: '&c由领地管理'
+      nation: '&c由国家管理'
+    role:
+      capital: '&4&l首都'
+      land: '&2&l领地'
+  never: 永不
+  now: '&a当前'
+  offline: '&c离线'
+  previous: '&8上一页'
+  rentables:
+    buy: '&a购买'
+    cost: '&c费用'
+    price_blocks_ratio: '&a价格-方块比率'
+    rent: '&e出租'
+    size: '&e尺寸'
+    rental: '&e租赁'
+    sell: '&a出售'
+  top:
+    sorting:
+      balance: 余额
+      chunks: 区块
+      level: 等级
+      members: 成员
+      ratio-kd: 击杀数/死亡数
+      ratio-wl: 胜利/失败
+  value:
+    none: '&c无'
+    unlimited: '&a无限'
+  wNo: '&c✘'
+  wYes: '&a✔'
+  war:
+    attackers: '&c进攻者'
+    defenders: '&a防御者'
+    name:
+      land: '&2领地 '
+      nation: '&9国家 '
+gui:
+  action-confirm:
+    items:
+      default:
+        cancel:
+          material: RED_STAINED_GLASS_PANE
+          name: '&c&l取消'
+          slots:
+          - 6-9
+          - 15-18
+          - 24-27
+          - 33-36
+          - 42-45
+          sound_click: BLOCK_ANVIL_HIT
+        confirm:
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a&l确认'
+          slots:
+          - 1-4
+          - 10-13
+          - 19-22
+          - 28-31
+          - 37-40
+          sound_click: ENTITY_PLAYER_LEVELUP
+        info:
+          lore:
+          - '&7点击 &a&l确认 &7以进行此操作或者'
+          - '&c&l取消 &7来停止这个操作。'
+          material: OAK_SIGN
+          name: '&6&l确认此操作'
+          slots:
+          - 5
+          - 14
+          - 23
+          - 32
+          - 41
+    title: '&8确认此操作'
+  admin_main:
+    items:
+      default:
+        child_failure_world:
+          lore:
+          - '&c你当前所在的世界必须是一个领地认领世界。'
+          - ' &8• &7你可以通过编辑配置文件中的'
+          - '   &7“claim-worlds_list”选项来添加认领世界。'
+          name: '&4&l不是领地世界'
+        lands:
+          lore:
+          - '&8✖ &7查看和管理管理员领地。'
+          - '    &8• &7要进一步编辑管理员领地，请执行'
+          - '      &3/lands edit &8<&3领地&8>&7，就像你'
+          - '      &7会对普通领地做的那样。'
+          - '    &8• &7管理员领地不需要支付任何维护费用'
+          - '      &7且不能参与战争。虽然它们的所有者自动设置为'
+          - '      &7“服务器”，你仍然可以通过执行'
+          - '      &3/lands setowner&7来更改。'
+          material: skin:http://textures.minecraft.net/texture/8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          name: '&6&l管理管理员领地'
+          slots: 25
+        wilderness:
+          lore:
+          - '&8✖ &7在荒野中切换权限组和自然开关。'
+          material: NAME_TAG
+          name: '&6&l荒野开关'
+          slots: 21
+    title: '&8管理员主菜单'
+  admin_wilderness:
+    items:
+      default:
+        action:
+          lore:
+          - '&8✖ &7编辑行为开关，例如:'
+          - '   &7破坏方块等。'
+          material: IRON_PICKAXE
+          name: '&6&l动作开关'
+          slots: 20
+        landflags:
+          lore:
+          - '&8✖ &7切换自然开关，例如'
+          - '   &7生物生成等。'
+          material: skin:http://textures.minecraft.net/texture/8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          name: '&6&l自然开关'
+          slots: 26
+        management:
+          lore:
+          - '&8✖ &7编辑第三方插件的管理员开关，这些开关可以在荒野中切换。'
+          material: GOLD_INGOT
+          name: '&6&l管理开关'
+          slots: 23
+    title: '&8荒野开关'
+  area:
+    items:
+      default:
+        child_failure_access:
+          lore:
+          - '&7领地所有者可以授权你的权限组执行此操作。'
+          - ' &8• &7开关：{flag}'
+          name: '&4不允许'
+        child_failure_rented:
+          lore:
+          - '&c你不能在出租或出售的情况下为此区域设置税费。'
+          - ' &8• &7当前租户:&3 {player}'
+          name: '&4已出租'
+        child_failure_spawn_area:
+          lore:
+          - '&c出生点必须在该区域内设置。'
+          - '&7你当前未站在其中。'
+          name: '&4&l必须在区域内'
+        child_failure_spawn_none:
+          lore:
+          - '&c此区域未设置出生点。'
+          name: '&4&l未设置出生点'
+        child_success_spawn_set:
+          lore:
+          - '&7你已在当前位置设置出生点。'
+          name: '&a出生点已设置'
+        land-settings:
+          lore:
+          - '&8✖ &7编辑与自然相关的开关，如'
+          - '   &7生物生成、植物生长等。'
+          material: skin:http://textures.minecraft.net/texture/8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          name: '&6&l自然开关'
+          slots: 29
+        player-management:
+          lore:
+          - '&8✖ &7管理成员、被封禁的玩家、'
+          - '   &7邀请和加入申请。'
+          material: skin:http://textures.minecraft.net/texture/e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          name: '&6&l玩家管理'
+          slots: 11
+        roles:
+          lore:
+          - '&8✖ &7管理此区域的权限组。'
+          - '   &8• 默认区域的权限组会自动添加到此区域。'
+          material: skin:http://textures.minecraft.net/texture/e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          name: '&6&l权限组'
+          slots: 30
+        spawn:
+          lore:
+          - '&8✖ &b左键点击'
+          - '   &7传送到此区域的出生点。'
+          - '&8✖ &9右键点击'
+          - '   &7设置出生点。'
+          material: ENDER_PEARL
+          name: '&6&l传送'
+          slots: 9
+        taxes:
+          lore:
+          - '&8✖ &7管理此区域的税费。'
+          - '   &7税费按区域收取。'
+          material: GOLD_INGOT
+          name: '&6&l税费'
+          slots: 31
+        various:
+          lore:
+          - '&8✖ &7编辑区域名称和'
+          - ' &7描述。'
+          material: BEACON
+          name: '&6&l杂项设置'
+          slots: 32
+        rental_setup:
+          material: INHERIT
+          slots: 34
+          name: '&6&lSetup Rental'
+          lore:
+          - '&8✖ &7Setup this area to be rented or sold.'
+        rental_setup_land:
+          material: INHERIT
+          slots: 34
+          name: '&6&lSell Land'
+          lore:
+          - '&8✖ &7Setup the whole land to be sold.'
+          - '   &8• &7A whole land or its default area &8(&6{area}&8)'
+          - '     &7can only be sold and not setup for rental.'
+        rental_setup_change_sell:
+          material: INHERIT
+          slots: 34
+          name: '&6&lChange Purchase Offer'
+          lore:
+          - '&8✖ &7Update purchase offer values.'
+          - ''
+          - '   &7Current:'
+          - '    &8• &7Cost:&c {cost}'
+        rental_setup_change_rent:
+          material: INHERIT
+          slots: 34
+          name: '&6&lChange Rental Offer'
+          lore:
+          - '&8✖ &7Update rental offer values.'
+          - ''
+          - '   &7Current:'
+          - '    &8• &7Interval:&5 {interval}'
+          - '    &8• &7Cost per interval:&c {cost}'
+          - '    &8• &7Max time:&5 {max-time}'
+    title: '&8{area}'
+  area_various:
+    items:
+      default:
+        child_no-item:
+          lore:
+          - '&7请把物品'
+          - '&7拿在主手中。'
+          name: '&4&l手中没有物品'
+        description:
+          lore:
+          - '&8✖ &7改变当前区域的描述'
+          - '   &7的菜单'
+          - '   &8• &7&l当前:'
+          - '   &8• &7&l当前:'
+          - '     {description}'
+          material: OAK_SIGN
+          name: '&6&l描述'
+          slots: 23
+        icon:
+          lore:
+          - '&8✖ &7往这里拖入一个物品来修改图标。'
+          - '    &8• &7这有助于你在菜单'
+          - '    &8• &7这有助于你在菜单'
+          - '      &7识别出这个区域。'
+          material: INHERIT
+          name: '&6&l图标'
+          slots: 26
+        name:
+          lore:
+          - '&8✖ &7重命名这个区域。'
+          - '   &7当前：{name}'
+          material: NAME_TAG
+          name: '&6&l名称'
+          slots: 20
+    title: '&8其它设置'
+  land:
+    items:
+      default:
+        areas:
+          lore:
+          - '&8✖ &7查看这片领地的所有区域。'
+          - '   &7你还可以在此菜单中创建新的区域。'
+          material: OAK_FENCE
+          name: '&6&l区域'
+          slots: 11
+        child_failure_land:
+          lore:
+          - '&c无法在荒野或'
+          - '&c不同的领地上设置出生点。'
+          name: '&4&l必须设置在领地内'
+        inbox:
+          lore:
+          - '&8✖ &7打开高级视图。'
+          - '&7收件箱中的消息:'
+          - '{inbox}'
+          material: skin:http://textures.minecraft.net/texture/6bf3fcdccffd963e4334818108e1e9ae3a80566d0d3d2d4ab3051a2cd811348c
+          name: '&6&l收件箱 &8(&7{amount}&8)'
+          slots: 15
+        land-settings:
+          lore:
+          - '&8✖ &7编辑区域&6 {area} &7的自然开关。'
+          material: skin:http://textures.minecraft.net/texture/8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          name: '&6&l自然开关'
+          slots: 29
+        level:
+          lore:
+          - '&8✖ &7查看等级进度和属性。'
+          material: EXPERIENCE_BOTTLE
+          name: '&6&l等级'
+          slots: 14
+        level_camp:
+          lore:
+          - '&c营地没有任何等级。'
+          material: EXPERIENCE_BOTTLE
+          name: '&6&l等级'
+          slots: 14
+        mainblock_set:
+          lore:
+          - '&8✖ &7将主方块放置在你当前的位置。'
+          - '   &7花费:&c {cost}'
+          material: BELL
+          name: '&a&l放置主方块'
+          slots: 45
+        player-management:
+          lore:
+          - '&8✖ &7管理成员、封禁玩家、邀请和成员请求。'
+          material: skin:http://textures.minecraft.net/texture/e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          name: '&6&l玩家管理'
+          slots: 12
+        relations:
+          lore:
+          - '&8✖ &7管理你与其他领地和国家的关系。'
+          material: LIME_BANNER
+          name: '&6&l关系'
+          slots: 13
+        relations_camp:
+          lore:
+          - '&c营地不能有任何关系。'
+          material: LIME_BANNER
+          name: '&6&l关系'
+          slots: 13
+        roles:
+          lore:
+          - '&8✖ &7查看区域&6 {area} &7的权限组。'
+          material: skin:http://textures.minecraft.net/texture/e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          name: '&6&l权限组'
+          slots: 30
+        spawn:
+          lore:
+          - '&8✖ &b左键点击'
+          - '   &7传送到领地的出生点。'
+          - '&8✖ &bSHIFT + 左键点击'
+          - '   &7设置出生点。'
+          - '&8✖ &9SHIFT + 右键点击'
+          - '   &7允许访客传送：{teleport}'
+          - '   &8• 这也可以在权限组菜单中编辑。'
+          material: ENDER_PEARL
+          name: '&6&l出生点'
+          slots: 9
+        stats:
+          lore:
+          - '&7出生点：{world}， x={x}， z={z}'
+          - '&7国家：{nation}'
+          - '&7区块：{chunks} / {chunks_max}'
+          - '&7成员：{members} / {members_max}'
+          - '&6&l经济:'
+          - ' &8• &7领地'
+          - '   &7余额：{balance}'
+          - '   &7下一次认领的费用：{chunk_cost}'
+          - '   &7距离缴纳&c {upkeep} &7的维护费还剩:'
+          - '   &7{upkeep_next}'
+          - ' &8• &4你的'
+          - '   &7余额：{balance_player}'
+          - '   &7距离缴纳&c {taxes} &7的税款还剩:'
+          - '   &7{taxes_next}'
+          material: skin:http://textures.minecraft.net/texture/d01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f
+          name: '&6&l统计信息'
+          slots: 16
+        taxes:
+          lore:
+          - '&8✖ &7查看区域&6 {area} &7的税费信息。'
+          material: GOLD_INGOT
+          name: '&6&l税费'
+          slots: 31
+        various:
+          lore:
+          - '&8✖ &7编辑领地名称和进入消息。'
+          material: BEACON
+          name: '&6&l杂项设置'
+          slots: 32
+      patches:
+        basic:
+          inbox:
+            slots: 15
+          land-settings:
+            slots: 29
+          members:
+            lore: '&8✖ &7管理成员。'
+            material: skin:http://textures.minecraft.net/texture/e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+            name: '&6&l成员'
+            slots: 11
+          roles:
+            slots: 13
+          stats:
+            lore: '&7出生点：{world}，x={x}，z={z}[newline]&7区块：{chunks} / {chunks_max}[newline]&7成员：{members}
+              / {members_max}'
+            material: skin:http://textures.minecraft.net/texture/d01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f
+            name: '&6&l统计信息'
+            slots: 17
+          various:
+            slots: 31
+    title: '&8{level} {land}'
+  land_various:
+    items:
+      default:
+        icon:
+          lore:
+          - '&8✖ &7将物品拖到这里以更改领地图标。'
+          - '&8✖ &3丢弃&8(Q键)'
+          - '   &7重置为默认。'
+          material: INHERIT
+          name: '&6&l图标'
+          slots: 26
+        name:
+          lore:
+          - '&8✖ &7为你的领地设置一个新名称。'
+          - '   &7&l当前名称: &7{name}'
+          material: NAME_TAG
+          name: '&6&l领地名称'
+          slots: 20
+        title:
+          lore:
+          - '&8✖ &7更改当玩家进入领地时出现的消息。'
+          - '    &8• &7&l当前消息:'
+          - '      {title}'
+          - '    &8• &7&l可用的占位符:'
+          - '      &8- &3%owner% &8= &7所有者'
+          - '      &8- &3%level% &8= &7等级'
+          - '      &8- &3%nation% &8= &7国家'
+          - '      &8- &3%player% &8= &7进入的玩家'
+          - '&8✖ &9右键点击'
+          - '   &7显示标题：{show}'
+          material: OAK_SIGN
+          name: '&6&l进入消息'
+          slots: 22
+      patches:
+        all:
+          category:
+            slots: 24
+          category_members:
+            slots: 24
+    title: '&8其它设置'
+  list_admin_lands:
+    items:
+      default:
+        add:
+          lore:
+          - '&8✖ &7将一个普通领地转换成'
+          - '   &7管理员领地。'
+          material: skin:http://textures.minecraft.net/texture/ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          name: '&a&l转换成管理员领地'
+          slots: 40
+        convert:
+          lore:
+          - '&8✖ &7将一个管理员领地转换回'
+          - '   &7普通领地。'
+          material: skin:http://textures.minecraft.net/texture/1811917c644f04f56b68c9c71b33ac082c2601c24409be78c2063d4df2a86525
+          name: '&e&l转换回普通状态'
+          slots: 41
+        delete:
+          lore:
+          - '&8✖ &7彻底删除一个管理员领地。'
+          material: skin:http://textures.minecraft.net/texture/548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          name: '&c&l彻底删除'
+          slots: 42
+        entry_object:
+          lore:
+          - '{title}'
+          - '&8✖ &7打开领地菜单。'
+          material: INHERIT
+          name: '&2&l{land}'
+    title: '&8管理员领地'
+  list_admin_wilderness_landflags:
+    title: '&8自然开关'
+  list_admin_wilderness_roleflags:
+    title: '&8玩家开关'
+  list_all:
+    items:
+      default:
+        entry_land:
+          lore:
+          - ' &8• &7{sorting}：{value}'
+          - ' &8• &7类型：{category}'
+          - ' &8• &7标题:'
+          - '   &7{title}'
+          - '&8✖ &b左键点击'
+          - '   &7传送到此领地的出生点。'
+          - '&8✖ &9右键点击'
+          - '   &7查看更多信息。'
+          material: INHERIT
+          name: '&6&l#{pos} &2&l{land}'
+        entry_land_looking:
+          lore:
+          - ' &8• &7{sorting}：{value}'
+          - ' &8• &7类型：{category}'
+          - ' &8• &7标题:'
+          - '   &7{title}'
+          - '&8✖ &b左键点击'
+          - '   &7传送到此领地的出生点'
+          - '   &7。'
+          - '&8✖ &9右键点击'
+          - '   &7查看更多信息。'
+          - '&6&l成员申请加入'
+          - '&8✖ &bSHIFT + 左键点击'
+          - '   &7请求申请加入。'
+          - '&8✖ &9SHIFT + 右键点击'
+          - '   &7撤销加入申请。'
+          material: INHERIT
+          name: '&6&l#{pos} &2&l{land}'
+        entry_nation:
+          lore:
+          - ' &8• &7{sorting}：{value}'
+          - ' &8• &7领地：{lands}'
+          - '&8✖ &b左键点击'
+          - '   &7传送到首都的出生点。'
+          - '&8✖ &9右键点击'
+          - '   &7查看更多信息。'
+          material: INHERIT
+          name: '&6&l#{pos} &2&l{nation}'
+        refresh_search:
+          lore:
+          - '&8✖ &7按名称搜索。'
+          - '   &8• &7当前搜索：{search}'
+          - ''
+          - '&8✖ &3丢弃&8(Q键)'
+          - '   &7重置搜索'
+          material: SPYGLASS
+          name: '&6&l搜索'
+          slots: 43
+        refresh_sorting:
+          lore:
+          - '&8✖ &7切换排序模式。'
+          material: HOPPER
+          name: '&6&l排序：{current}'
+          slots: 40
+        refresh_toggle-allowed:
+          lore:
+          - '&8✖ &7仅显示你被允许进入和传送到'
+          - '   &7出生点的玩家?'
+          material: OAK_DOOR
+          name: '&6&l仅展示公共领地：{only-allowed}'
+          slots: 42
+        refresh_toggle-category:
+          lore:
+          - '&8✖ &7仅显示属于此类型的领地?'
+          - '   &8• &7类型描述:'
+          - '     {description}'
+          material: BOOKSHELF
+          name: '&6&l类型：{category}'
+          slots: 41
+    title: '&8所有领地'
+  list_area_banned:
+    items:
+      default:
+        ban:
+          lore:
+          - '&8✖ &7从此区域封禁玩家。'
+          - ' &8• &7被封禁的玩家将无法'
+          - '   &7进入或传送至此区域。'
+          material: skin:http://textures.minecraft.net/texture/ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          name: '&c&l封禁玩家'
+          slots: 40
+        entry_area:
+          lore:
+          - '&7这位玩家在这个区域中被封禁。'
+          - '&8✖ 点击以获取有关该玩家的更多信息。'
+          material: INHERIT
+          name: '&e&l{player}'
+        refresh_toggle:
+          lore:
+          - '&8✖ &7仅显示在此区域被封禁的玩家 &8(&6{area}&8)&7?'
+          - '    &8• &6&l如果禁用:'
+          - '      &7它会显示整个领地的封禁情况。'
+          - '      &7同时允许你在整个领地中封禁或解封玩家。'
+          material: HOPPER
+          name: '&6&l仅查看区域：{current}'
+          slots: 41
+        unban:
+          lore:
+          - '&8✖ &7从这个区域解封玩家。'
+          material: skin:http://textures.minecraft.net/texture/548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          name: '&a&l解封玩家'
+          slots: 42
+        entry_area_all:
+          material: INHERIT
+          lore:
+          - '&7Banned in these areas:'
+          - '{areas}'
+          - ''
+          - '&8✖ &7View more information.'
+          - '&8✖ &3DROP'
+          - '   &7Unban'
+          name: '&e&l{player}'
+        global-action:
+          material: skin:http://textures.minecraft.net/texture/c9c8881e42915a9d29bb61a16fb26d059913204d265df5b439b3d792acd56
+          slots: 44
+          name: '&6&lExecute for all Areas: {current}'
+          lore:
+          - '&8✖ &7Ban or unban players in the whole land?'
+          - '   &8• &7If disabled: Only bans/unbans'
+          - '     &7players for area&6 {area}&7.'
+    title: '&8{area} &7> &8被封禁的玩家'
+  list_area_invites:
+    items:
+      default:
+        child_failure_access:
+          lore:
+          - '&c你不被允许在此区域撤销邀请。'
+          - '&8• &7领地所有者可以授予你的权限组撤销邀请的权限。'
+          name: '&4&l不允许'
+        entry_object_owner:
+          lore:
+          - '&7将此玩家设为新的拥有者'
+          - '&7领地 &2{land}&7。'
+          - '&6&l信息'
+          - '&8• &7发送时间:&5 {time}'
+          - '&8• &7发送方：{sender}'
+          - '&8✖ &3丢弃键(Q)'
+          - '   &7撤销此邀请。'
+          name: '&e&l{player} &7- &6&l转让邀请'
+          material: INHERIT
+        entry_object_trust_area:
+          lore:
+          - '&7信任该玩家进入该区域。'
+          - '&6{area}&7。'
+          - '&6&l信息[换行]&8• &7发送时间:&5{time}'
+          - '&8• &7发送者：{sender}'
+          - '&8✖ &3撤销'
+          - '   &7撤销该邀请。'
+          name: '&e&l{player} &7-&6&l成员邀请'
+          material: INHERIT
+        entry_object_trust_land:
+          lore:
+          - '&7信任这个玩家进入整个领地 &2{land}&7。'
+          - '&6&l信息'
+          - '&8• &7发送时间:&5{time}'
+          - '&8• &7发送者：{sender}'
+          - '&8✖ &3放下'
+          - '   &7撤销这个邀请。'
+          name: '&e&l{player} &7- &6&l成员邀请'
+          material: INHERIT
+    title: '&8{area} &7> &8邀请'
+  list_area_players:
+    items:
+      default:
+        child_failure_access:
+          lore:
+          - '&c你没有权限取消信任'
+          - '&c玩家。'
+          - ' &8• &7领地所有者可以授予你新的权限'
+          - '   &7来执行此操作。'
+          name: '&4&l无权访问'
+        child_failure_edit_player_area:
+          lore:
+          - '&c你无法编辑这个玩家。'
+          - ' &8• &7他们的权限组&6{role}&7的优先级高于或者等于你。'
+          name: '&4&l权限组优先级'
+        child_failure_edit_player_land:
+          lore:
+          - '&c你无法编辑这个玩家。'
+          - ' &8• &7他们的权限组&6{role}&7的优先级高于或者等于你。'
+          name: '&4&l权限组优先级'
+        child_failure_max-players:
+          lore:
+          - '&7这片领地已经达到了他们的最大成员数'
+          - '&7数量为&3 {max} &7名成员。'
+          name: '&4&l最大信任玩家数'
+        child_failure_owner:
+          lore:
+          - '&c所有者不能不受信任。'
+          - ' &8• &7可以通过执行&e/{cmd}&7来设置新的所有者。'
+          name: '&4&l所有者'
+        child_failure_priority:
+          lore:
+          - '&c你不能修改'
+          - '&c此权限组。'
+          - ' &8• &7比你拥有更高的'
+          - ' &8• &7比你拥有更高的'
+          - '   &7优先级或者你拥有'
+          - '   &7相同的权限组。'
+          name: '&4&l权限组优先级'
+        child_failure_self:
+          lore:
+          - '&7要离开一个领地请使用 &e/lands leave &7。'
+          name: '&4&l不能取消信任自己'
+        child_failure_setrole:
+          lore:
+          - '&c你无权设置权限组。'
+          - '&8• &7领地所有者可以授予你'
+          - '  &7权限组权限来执行此操作。'
+          name: '&4&l无权访问'
+        child_failure_tenant:
+          lore:
+          - '&c租户不能不受信任。'
+          - '&c他们的权限组不能被更改。'
+          - ' &8• &7可以通过执行&e/{cmd}&7来移除租户。'
+          name: '&4&l租户'
+        entry_area:
+          lore:
+          - '&7权限组：{role}'
+          - '&8✖ &bSHIFT + 左键点击'
+          - '   &7▲ 提升'
+          - '&8✖ &9SHIFT + 右键点击'
+          - '   &7▼ 降级'
+          - '&8✖ &3丢弃&8(Q键)'
+          - '   &7在此区域取消信任。'
+          - '&8✖ &7点击以获取更多信息。'
+          material: INHERIT
+          name: '&e&l{player}'
+        refresh_toggle:
+          lore:
+          - '&8✖ &7仅显示在这个区域&8(&6{area}&8)&7中受信任的玩家?'
+          - '    &8• &6&l如果已禁用:'
+          - '      &7它将显示整个领地的玩家。'
+          - '      &7还允许你信任或取消信任整个领地的玩家。'
+          material: HOPPER
+          name: '&6&l仅查看区域：{current}'
+          slots: 41
+        trust:
+          lore:
+          - '&8✖ &7在此区域信任玩家。'
+          - '   &7可用:&3 {players} &8/&c {max}'
+          material: skin:http://textures.minecraft.net/texture/ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          name: '&a&l信任玩家'
+          slots: 40
+        untrust:
+          lore:
+          - '&8✖ &7从这个区域取消信任一个玩家。'
+          material: skin:http://textures.minecraft.net/texture/548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          name: '&c&l取消信任玩家'
+          slots: 42
+        global-action:
+          material: skin:http://textures.minecraft.net/texture/c9c8881e42915a9d29bb61a16fb26d059913204d265df5b439b3d792acd56
+          slots: 44
+          name: '&6&lExecute for all Areas: {current}'
+          lore:
+          - '&8✖ &7Trust or untrust players in the whole land?'
+          - '   &8• &7If disabled: Only trusts/untrusts'
+          - '     &7players for area&6 {area}&7.'
+        entry_area_all:
+          material: INHERIT
+          lore:
+          - '&7Trusted in these areas:'
+          - '{areas}'
+          - ''
+          - '&8✖ &bLEFT CLICK'
+          - '   &7View more information.'
+          - '&8✖ &3DROP'
+          - '   &7Untrust'
+          name: '&e&l{player}'
+    title: '&8{area} &7> &8受信任的玩家'
+  list_area_roles:
+    items:
+      default:
+        child_failure_access:
+          lore:
+          - '&c你不被允许编辑权限组'
+          - '&c在这个区域内。'
+          - ' &8• &7领地所有者可以授权你的'
+          - '   &7权限组来执行此操作。'
+          name: '&4&l不允许'
+        child_failure_max-roles:
+          lore:
+          - '&c这个区域已经达到了'
+          - '&c最大&4 {max} &c个权限组的上限。'
+          name: '&4&l已达到最大权限组数量'
+        child_failure_priority:
+          lore:
+          - '&c你不被允许编辑此权限组的设置。'
+          - ' &8• &7它的优先级高于你的或者和你的优先级相同。'
+          name: '&4&l权限组优先级'
+        child_failure_required:
+          lore:
+          - '&c你不能删除此权限组。'
+          - ' &8• &7它是玩家管理所必需的。'
+          name: '&4&l需要权限组'
+        create:
+          lore:
+          - '&8✖ &7创建一个新权限组。'
+          - '   &7可用:&3 {roles} &8/&c {max}'
+          material: skin:http://textures.minecraft.net/texture/ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          name: '&a&l新建权限组'
+          slots: 40
+        delete:
+          lore:
+          - '&8✖ &7删除此区域的权限组。'
+          material: skin:http://textures.minecraft.net/texture/548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          name: '&c&l删除权限组'
+          slots: 42
+        entry_object_system_priority:
+          material: INHERIT
+          lore:
+          - '&8✖ &b左键单击'
+          - '   &7编辑权限组。'
+          - '&8✖ &bSHIFT + 左键单击'
+          - '   &7提高优先级'
+          - '&8✖ &9SHIFT + 右键单击'
+          - '   &7降低优先级'
+          name: '&7&l{role}'
+        entry_object_normal:
+          material: INHERIT
+          lore:
+          - '&8✖ &b左键单击'
+          - '   &7编辑权限组。'
+          - '&8✖ &bSHIFT + 左键单击'
+          - '   &7提高优先级'
+          - '&8✖ &9SHIFT + 右键单击'
+          - '   &7降低优先级'
+          - '&8✖ &3丢弃键(Q)'
+          - '   &7删除权限组。'
+          name: '&7&l{role}'
+        entry_object_system:
+          material: INHERIT
+          lore:
+          - '&8✖ &b左键单击'
+          - '   &7编辑权限组。'
+          name: '&7&l{role}'
+    title: '&8{area} &7> &8权限组'
+  list_area_settings:
+    items:
+      default:
+        child_failure_access:
+          lore:
+          - '&c你无权编辑此区域的权限组。'
+          - ' &8• &7领地所有者可以给予你的权限组权限来进行编辑。'
+          name: '&4&l不允许'
+        child_failure_permission:
+          lore:
+          - '&c你没有权限进行此操作'
+          - '&c修改这个开关。'
+          name: '&4&l缺少权限'
+        child_failure_priority:
+          lore:
+          - '&c你无权编辑此权限组的设置。'
+          - ' &8• &7它的优先级高于你的权限组，或者你是此权限组的成员。'
+          name: '&4&l权限组优先级'
+        entry_animal_spawn:
+          lore:
+          - '&8✖ &7允许动物生成?'
+          - ' '
+          - '    &8• &7刷怪笼不受此开关影响。'
+          - ' '
+          - '   &7解锁状态：{unlocked}'
+          material: skin:http://textures.minecraft.net/texture/bee8514892f3d78a32e8456fcbb8c6081e21b246d82f398bd969fec19d3c27b3
+          name: '&6&l动物生成：{enabled}'
+        entry_entity_griefing:
+          lore:
+          - '&8✖ &7允许生物破坏方块?'
+          - ' '
+          - '    &8• &7&l如果启用:'
+          - '      &7苦力怕将'
+          - '      &7能够摧毁你的建筑物，'
+          - '      &7闪电也会造成伤害等。'
+          - ' '
+          - '   &7解锁状态：{unlocked}'
+          material: CREEPER_HEAD
+          name: '&6&l生物破坏：{enabled}'
+        entry_fire_spread:
+          lore:
+          - '&8✖ &7允许火焰在你的领地内蔓延吗？'
+          - ' '
+          - '    &8• &7&l如果禁用:'
+          - '      &7来自荒野的火焰也将'
+          - '      &7无法蔓延进你的领地。'
+          - ' '
+          - '   &7解锁状态：{unlocked}'
+          material: FLINT_AND_STEEL
+          name: '&6&l火焰蔓延：{enabled}'
+        entry_general_admin:
+          lore:
+          - '&8✖ &7点击以切换状态:'
+          - ' '
+          - '   &7解锁状态：{unlocked}'
+          - ' '
+          - '&7描述:'
+          - ' &8• {desc}'
+          - ' &8• &7这是一个管理员开关。'
+          - '     &7仅适用于管理员领地和'
+          - '     &e/lands admin wilderness&7 命令。'
+          material: INHERIT
+          name: '&6&l{flag}：{enabled}'
+        entry_general_player:
+          lore:
+          - '&8✖ &7点击以切换状态:'
+          - ' '
+          - '   &7解锁状态：{unlocked}'
+          - ' '
+          - '&7描述:'
+          - '{desc}'
+          material: INHERIT
+          name: '&6&l{flag}：{enabled}'
+        entry_leaf_decay:
+          lore:
+          - '&8✖ &7树叶是否可以在你的领地内腐烂?'
+          - ' '
+          - '   &8• &7解锁状态：{unlocked}'
+          material: OAK_LEAVES
+          name: '&6&l树叶枯萎：{enabled}'
+        entry_monster_spawn:
+          lore:
+          - '&8✖ &7允许怪物自然生成。'
+          - ' '
+          - '    &8• &7刷怪笼不受此开关影响。'
+          - ' '
+          - '   &7解锁状态：{unlocked}'
+          material: SPAWNER
+          name: '&6&l怪物生成：{enabled}'
+        entry_phantom_spawn:
+          lore:
+          - '&8✖ &7允许幻翼通过自然生成。'
+          - ' '
+          - '    &8• #ffffff&l[#e8ecfd&lT#d1d8fa&l+#bac5f8&l专#a2b2f5&l属#8b9ff3&l标#748bf0&l志#5d78ee&l]'
+          - '    &8• &7刷怪笼不受此开关影响。'
+          - ' '
+          - '   &7解锁状态：{unlocked}'
+          material: PHANTOM_SPAWN_EGG
+          name: '&6&l幻翼生成：{enabled}'
+        entry_piston_griefing:
+          lore:
+          - '&8✖ &7允许来自荒野或其他领地/区域'
+          - '&7    的活塞将方块推入你的领地吗?'
+          - ' '
+          - '    &8• &7&l如果启用:'
+          - '      &7玩家将能够利用荒野的活塞'
+          - '      &7对你的领地进行破坏。'
+          - ' '
+          - '   &7解锁状态：{unlocked}'
+          material: PISTON
+          name: '&6&l来自荒野的活塞：{enabled}'
+        entry_plant_growth:
+          lore:
+          - '&8✖ &7植物是否应该生长?'
+          - ' '
+          - '   &7解锁状态：{unlocked}'
+          material: VINE
+          name: '&6&l植物生长：{enabled}'
+        entry_snow_melt:
+          lore:
+          - '&8✖ &7雪和冰应该融化吗?'
+          - ' '
+          - '    &8• &7&l若禁用:'
+          - '      &7下雪和雪傀儡将不会'
+          - '      &7在地面上产生雪。'
+          - ' '
+          - '   &7解锁状态：{unlocked}'
+          material: SNOWBALL
+          name: '&6&l冰雪消融：{enabled}'
+        entry_tnt_griefing:
+          lore:
+          - '&8✖ &7允许 TNT 对方块造成破坏?'
+          - ' '
+          - '    &8• &7&l如果启用:'
+          - '      &7其他玩家可能会发射 TNT'
+          - '      &7飞入你的领地造成破坏。'
+          - ' '
+          - '      &7Tips：如果你需要刷石机'
+          - '      &7可以新建区域并单独开启'
+          - '      &7TNT 破坏的开关。'
+          - ' '
+          - '   &7解锁状态：{unlocked}'
+          material: TNT
+          name: '&6&lTNT 破坏方块：{enabled}'
+        entry_waterflow_allow:
+          lore:
+          - '&8✖ &7允许来自荒野或其他领地'
+          - '   &7的水或熔岩流入你的领地吗?'
+          - ' '
+          - '    &8• &7&l如果启用:'
+          - '      &7玩家将能够在荒野放置水'
+          - '      &7或熔岩来破坏你的领地。'
+          - ' '
+          - '   &7解锁状态：{unlocked}'
+          material: WATER_BUCKET
+          name: '&6&l水和熔岩的流入：{enabled}'
+        entry_wither_attack_animal:
+          lore:
+          - '&8✖ &7凋零是否能够伤害动物?'
+          - ' '
+          - '    &8• &7凋零始终可以伤害其他怪物。'
+          - ' '
+          - '   &7解锁状态：{unlocked}'
+          material: skin:http://textures.minecraft.net/texture/886dc0cfcaeecfe1ab69146e4d4f1190837076a67dec135fabda6271f375d01f
+          name: '&6&l凋零攻击动物：{enabled}'
+        entry_block_spreading:
+          material: BUDDING_AMETHYST
+          name: '&6&l方块蔓延：{enabled}'
+          lore:
+          - '&8✖ &7是否允许方块从外面蔓延到这里？'
+          - ' '
+          - '    &8• &7这会影响诸如紫水晶块之类的方块。'
+          - '    &8• &7来自荒野的方块永远不会蔓延到这里。'
+          - ' '
+          - '   &7解锁状态：{unlocked}'
+    title: '&8{area} &7> &8自然开关'
+  list_inbox:
+    items:
+      default:
+        child_failure_owner:
+          lore:
+          - '&7只有领地所有者可以删除'
+          - '&7收件箱消息。'
+          name: '&4&l所有者'
+        entry_object:
+          lore:
+          - '{message}'
+          - '&8✖ &7点击以删除。'
+          material: PAPER
+          name: '&6&l#{id}'
+          slots: 10-36
+        refresh_clear:
+          lore:
+          - '&8✖ &7删除所有收件箱的消息。'
+          material: BARRIER
+          name: '&6&l清空'
+          slots: 41
+        refresh_filter:
+          lore:
+          - '&8✖ &7循环浏览消息类型。'
+          - '   &7当前:&3{type}'
+          material: HOPPER
+          name: '&6&l按类型筛选'
+          slots: 40
+        refresh_post:
+          lore:
+          - '&8✖ &7发布信息给你的领地成员。'
+          - '   &7他们将会收到通知。'
+          material: WRITABLE_BOOK
+          name: '&a&l创建消息'
+          slots: 42
+    title: '&8收件箱'
+  list_land_areas:
+    items:
+      default:
+        child_failure_access:
+          lore:
+          - '&c你没有权限删除此领地中的区域。'
+          - ' &8• &7领地所有者可以授予你的权限组权限来分配区域。'
+          name: '&4&l不允许'
+        child_failure_default:
+          lore:
+          - '&c你不能删除这个领地的默认区域。'
+          - ' &8• &7新的认领将属于它。'
+          name: '&4&l默认区域'
+        child_failure_max-areas:
+          lore:
+          - '&c这个领地已经达到了它的最大区域数:&4 {max}。'
+          name: '&4&l最大区域数'
+        child_failure_rented:
+          lore:
+          - '&c在此区域正在出租或出售时，你无法编辑它。'
+          - ' &8• &7当前租户:&3 {player}'
+          name: '&4&l已出租'
+        child_failure_untrusted:
+          lore:
+          - '&c你没有权限打开这个区域的菜单。'
+          - ' &8• 你需要被信任在这个区域。'
+          name: '&4&l不受信任'
+        create:
+          lore:
+          - '&8✖ &7为此领地创建一个新区域。'
+          - '   &7可用:&3 {areas} &8/&c {max}'
+          material: skin:http://textures.minecraft.net/texture/ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          name: '&a&l新建区域'
+          slots: 40
+        delete:
+          lore:
+          - '&8✖ &7删除此领地的一个区域。'
+          material: skin:http://textures.minecraft.net/texture/548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          name: '&c&l删除区域'
+          slots: 42
+        entry_area:
+          lore:
+          - '&7{description}'
+          - '&8✖ &7管理此区域。'
+          - '&8✖ &3丢弃&8(Q键)'
+          - '   &7删除此区域。'
+          material: INHERIT
+          name: '&6&l{area}'
+        entry_area-setup:
+          lore:
+          - '&81。 执行 &e/lands selection &7并选择一个较低的角和一个较高的角。'
+          - '&82。 执行 &e/{cmd}'
+          - ' 来将选择分配给这个区域。'
+          - '&8✖ &3丢弃&8(Q键)'
+          - ' 删除这个区域。'
+          material: ACACIA_FENCE
+          name: '&c&l设置'
+        entry_area_default:
+          lore:
+          - '&7{description}'
+          - '&8✖ &7打开此区域的菜单。'
+          material: INHERIT
+          name: '&6&l{area}'
+    title: '&8区域'
+  list_land_claims:
+    items:
+      default:
+        child_failure_cooldown:
+          lore:
+          - '&c在你可以再次进行此操作之前，你需要等待另外&4 {time}'
+          - '&c的时间。'
+          name: '&4&l冷却时间'
+        refresh_toggle:
+          lore:
+          - '&8✖ &7点击这里切换'
+          - ' &7世界。'
+          material: skin:http://textures.minecraft.net/texture/8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          name: '&6&l世界：{world}'
+          slots: 41
+        entry_chunk:
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          lore:
+          - '&8✖ &7Teleport to this chunk.'
+          - '   &8• &7World: {world}'
+          - '   &8• &7X: {x}'
+          - '   &8• &7Z: {z}'
+          - '   &8• &7Claimed:&5 {date}'
+          name: '&6&l{world}, {x}, {z}'
+        entry_chunk_server:
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          lore:
+          - '&8✖ &7Teleport to this chunk.'
+          - '   &8• &7Server: {server}'
+          - '&8• &7World: {world}'
+          - '   &8• &7X: {x}'
+          - '   &8• &7Z: {z}'
+          - '   &8• &7Claimed:&5 {date}'
+          name: '&e{server} &6&l{world}, {x}, {z}'
+    title: '&8认领'
+  list_land_storage:
+    items: default：{}
+    title: '&8领地仓库'
+  list_level_progress:
+    items:
+      default:
+        current:
+          lore:
+          - '&7属性:'
+          - '{attributes}'
+          material: OAK_SIGN
+          name: '&6&l当前等级:&7 {level}'
+          slots: 41
+        entry_done:
+          lore:
+          - '{bar} {progress}'
+          - '{description}'
+          material: LIME_STAINED_GLASS
+          name: '&a&l✔ {title}'
+        entry_loading:
+          lore:
+          - '&7当前进度正在计算中。项目将在完成后进行更新。'
+          - '{description}'
+          material: GRAY_STAINED_GLASS
+          name: '&7&l? {title}'
+        entry_progress:
+          lore:
+          - '{bar} {progress}'
+          - '{description}'
+          material: RED_STAINED_GLASS
+          name: '&c&l✘ {title}'
+        next:
+          lore:
+          - '&7{object} 一旦满足所有要求，将达到这个等级。'
+          - '&7&l属性:'
+          - '{attributes}'
+          material: BEACON
+          name: '&6&l下一级: &7{level}'
+          slots: 42
+    title: '&8等级进度'
+  list_membership-requests:
+    items:
+      default:
+        child_failure_land_max-members:
+          lore:
+          - '&c{object}&7达到了最大成员数。'
+          name: '&4&l无法再信任更多人'
+        child_failure_player_banned:
+          lore:
+          - '&c无法信任玩家&4 {player}&c，'
+          - '&c因为他们被封禁了。'
+          - ' &8• &7解封: &e/lands unban'
+          name: '&4&l已封禁'
+        child_failure_player_max-lands:
+          lore:
+          - '&c该玩家已达到他们可以同时加入的领地的最大数量。'
+          name: '&4&l无法再加入更多的领地'
+        child_failure_player_own-land:
+          lore:
+          - '&c无法信任这个玩家，因为他们现在有自己的领地。'
+          - '&7他们必须先删除他们的领地。'
+          name: '&4&l拥有自己的领地'
+        entry_object:
+          lore:
+          - '&5{time}&7前'
+          - '&8✖ &b左键点击'
+          - '   &7接受请求并信任他们。'
+          - '&8✖ &9右键点击'
+          - '   &7获取更多关于他们的信息。'
+          - '&8✖ &3丢弃&8(Q键)'
+          - '   &7拒绝请求。'
+          material: INHERIT
+          name: '&6&l{name}'
+        membership_accept:
+          lore:
+          - '&8✖ &7是否应自动接受加入申请?'
+          - '  &8• &7这意味着任何人都可以加入你的领地。'
+          - '  &8• &7新成员将被分配权限组'
+          - '    &7{role}。'
+          material: REDSTONE
+          name: '&6&l自动接受：{status}'
+          slots: 42
+      patches:
+        all:
+          category:
+            slots: 40
+          category_members:
+            slots: 40
+    title: '&8加入申请'
+  list_nation_effects:
+    items:
+      default:
+        child_failure_locked:
+          lore:
+          - '&7你的国家需要达到等级&3{level} &7才能激活此效果。'
+          name: '&4&l等级过低'
+        child_failure_max:
+          lore:
+          - '&c你的国家已达到最大'
+          - 并发
+          - 活跃效果的数量上限 &4{max}。
+          - ' &8• &7你可以通过'
+          - '   &7达到更高的等级，'
+          - '   &7从而同时激活更多效果。'
+          name: '&4&l最大数量'
+        entry_object:
+          lore:
+          - '&8✖ &7此效果是否应在你的国家领地内生效?'
+          material: POTION
+          name: '&6&l{effect}：{active}'
+        entry_object_active:
+          enchanted: true
+          lore:
+          - '&8✖ &7此效果在你的国家领地内是否应处于激活状态?'
+          material: POTION
+          name: '&6&l{effect}：{active}'
+        entry_object_locked:
+          lore:
+          - '&7达到等级 {level} 后解锁'
+          material: POTION
+          name: '&6&l{effect}'
+    title: '&8效果'
+  list_nation_lands:
+    items:
+      default:
+        entry_object:
+          lore:
+          - '&8✖ &7查看有关这块领地的信息。'
+          - '&7标题:'
+          - '&7{title}'
+          - '&8✖ &9右键点击'
+          - '   &7获取有关这块领地的更多信息。'
+          material: INHERIT
+          name: '&2&l{prefix} {land}'
+        trust:
+          lore:
+          - '&8✖ &7邀请一块领地加入'
+          - '   &7你的国家。'
+          - '   &7可用:&3{lands} &8/&c{max}'
+          material: skin:http://textures.minecraft.net/texture/ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          name: '&a&l邀请领地'
+          slots: 41
+        untrust:
+          lore:
+          - '&8✖ &7取消信任一块领地离开你的国家。'
+          material: skin:http://textures.minecraft.net/texture/548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          name: '&c&l取消信任领地'
+          slots: 42
+        members_online:
+          material: CLOCK
+          slots: 41
+          name: '&6&lOnline Members'
+          lore:
+          - '&8✖ &7View members that are online.'
+    title: '&8国家成员'
+  list_player_flags:
+    items:
+      default:
+        entry_enter_messages:
+          lore:
+          - '&8✖ &7显示领地进入和离开消息?'
+          - '   &7解锁状态：{unlocked}'
+          material: OAK_SIGN
+          name: '&6&l玩家进入或者离开消息：{enabled}'
+        entry_general_player:
+          lore:
+          - '&8✖ &7点击切换:'
+          - '   &7解锁状态：{unlocked}'
+          - '&7描述:'
+          - '{desc}'
+          material: INHERIT
+          name: '&6&l{flag}：{enabled}'
+        entry_receive_invites:
+          lore:
+          - '&8✖ &7允许其他领地向你发送'
+          - '   &7邀请以加入它们吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: WRITABLE_BOOK
+          name: '&6&l接收邀请：{enabled}'
+        entry_show_inbox:
+          lore:
+          - '&8✖ &7是否接收有关你的领地中发生的重要'
+          - '   &7事件的通知?'
+          - '   &7解锁状态：{unlocked}'
+          material: skin:http://textures.minecraft.net/texture/6bf3fcdccffd963e4334818108e1e9ae3a80566d0d3d2d4ab3051a2cd811348c
+          name: '&6&l显示收件箱：{enabled}'
+    title: '&8个人设置'
+  list_player_invites:
+    items:
+      default:
+        entry_object_owner:
+          lore:
+          - '&8✖ &7拒绝这个邀请或'
+          - '   &7查看一些信息。'
+          material: INHERIT
+          name: '&2&l{land} &7- &6&l成为所有者'
+        entry_object_trust:
+          lore:
+          - '&8✖ &7拒绝这个邀请或'
+          - '   &7查看一些信息。'
+          material: INHERIT
+          name: '&2&l{land} &7- &6&l成员邀请'
+    title: '&8接受邀请'
+  list_player_lands:
+    items:
+      default:
+        entry_camp:
+          lore:
+          - '&7你在这个营地中被信任。'
+          - ' '
+          - '&7营地是无法扩展的领地。'
+          - '&7不需要支付维护费用。'
+          - ' '
+          - '&7&l这个营地将在：'
+          - '&5~{time}&7后过期。'
+          - ' '
+          - '&8✖ &b左键点击'
+          - '   &7管理营地。'
+          - '&8✖ &bSHIFT + 左键点击'
+          - '   &7执行&e/lands edit &7营地'
+          - '   &7将该营地设置为编辑模式。'
+          - '&8✖ &9右键点击'
+          - '   &7查看营地的一般信息。'
+          material: INHERIT
+          name: '&2&l{land}'
+        entry_camp_edit:
+          lore:
+          - '&7你已将当前营地设置为编辑状态，'
+          - '&7领地命令将会对该营地生效。'
+          - ' '
+          - '&7营地是无法扩展的领地。'
+          - '&7不需要支付维护费用。'
+          - ' '
+          - '&7&l这个营地将在：'
+          - '&5~{time}&7后过期。'
+          - ' '
+          - '&8✖ &b左键点击'
+          - '   &7管理营地。'
+          - '&8✖ &9右键点击'
+          - '   &7查看营地的一般信息。'
+          material: INHERIT
+          name: '&2&l{land}'
+        entry_camp_own:
+          lore:
+          - '&7你拥有这个营地。'
+          - '&7营地是无法扩展的领地。'
+          - '&7不需要支付维护费用。'
+          - ' '
+          - '&7&l这个营地将在：'
+          - '&5~{time}&7后过期。'
+          - ' '
+          - '&8✖ &b左键点击'
+          - '   &7管理营地。'
+          - '&8✖ &bSHIFT + 左键点击'
+          - '   &7执行&e/lands edit &7营地'
+          - '   &7将该营地设置为编辑模式。'
+          - '&8✖ &9右键点击'
+          - '   &7查看营地的一般信息。'
+          material: INHERIT
+          name: '&2&l{land}'
+        entry_land:
+          lore:
+          - '&7你被这个领地所信任。'
+          - ' '
+          - ' &8• &7所属国家：&9{nation}'
+          - ' &8• &7区块数量：&3{chunks} &7/&c {max-chunks}'
+          - ' '
+          - '&8✖ &b左键点击'
+          - '   &7管理领地。'
+          - '&8✖ &bSHIFT + 左键点击'
+          - '   &7执行&e/lands edit &7领地'
+          - '   &7将该领地设置为编辑模式。'
+          - '&8✖ &9右键点击'
+          - '   &7查看领地的一般信息。'
+          material: INHERIT
+          name: '&2&l{land}'
+        entry_land_edit:
+          lore:
+          - '&7你已将当前领地设置为编辑状态，'
+          - '&7领地命令将会对该领地生效。'
+          - ' '
+          - '&8✖ &b左键点击'
+          - '   &7管理领地。'
+          - '&8✖ &9右键点击'
+          - '   &7查看领地的一般信息。'
+          material: skin:http://textures.minecraft.net/texture/eef425b4db7d62b200e89c013e421a9e110bfb27f2d8b9f5884d10104d00f4f4
+          name: '&2&l{land}'
+        entry_land_own:
+          lore:
+          - '&7你拥有这个领地。'
+          - ' '
+          - ' &8• &7所属国家：&9{nation}'
+          - ' &8• &7区块数量：&3{chunks} &7/&c {max-chunks}'
+          - ' '
+          - '&8✖ &b左键点击'
+          - '   &7管理领地。'
+          - '&8✖ &bSHIFT + 左键点击'
+          - '   &7执行&e/lands edit &7领地'
+          - '   &7将该领地设置为编辑模式。'
+          - '&8✖ &9右键点击'
+          - '   &7查看领地的一般信息。'
+          material: INHERIT
+          name: '&2&l{land}'
+    title: '&8你的领地'
+  list_player_map:
+    entries: 1-54
+    items:
+      default:
+        back:
+          slots: 46
+        entry_chunk_owner:
+          lore:
+          - '&7你拥有这个领地。'
+          - '&8✖ &7打开这个领地的菜单。'
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a&l已拥有'
+        entry_chunk_position:
+          lore:
+          - '&7这是你当前的位置。'
+          material: NETHER_STAR
+          name: '&6&l当前位置'
+        entry_chunk_trusted:
+          lore:
+          - '&7你在这个区块被信任。'
+          - '&8✖ &7打开这个领地的菜单。'
+          material: YELLOW_STAINED_GLASS_PANE
+          name: '&e&l被信任'
+        entry_chunk_untrusted:
+          lore:
+          - '&c你在这个区块不受信任。'
+          - '&8✖ &7查看这个领地的信息。'
+          material: RED_STAINED_GLASS_PANE
+          name: '&4&l不受信任'
+        entry_chunk_wilderness:
+          lore:
+          - '&8✖ &7点击以认领此区块。'
+          material: GREEN_STAINED_GLASS_PANE
+          name: '&2荒野'
+        refresh_reset-pos:
+          lore:
+          - '&8✖ &7复位当前位置。'
+          material: skin:http://textures.minecraft.net/texture/22e4ad83c4938d9e5fc589e60c8010be2480e08d834529cec0da13bdf2538555
+          name: '&6&l复位位置'
+          slots: 54
+        refresh_move_up:
+          material: skin:http://textures.minecraft.net/texture/45c588b9ec0a08a37e01a809ed0903cc34c3e3f176dc92230417da93b948f148
+          slots: 5
+          name: '&6&l向 {direction} 导航'
+        refresh_move_down:
+          material: skin:http://textures.minecraft.net/texture/1cb8be16d40c25ace64e09f6086d408ebc3d545cfb2990c5b6c25dabcedeacc
+          slots: 50
+          name: '&6&l向 {direction} 导航'
+        refresh_move_left:
+          material: skin:http://textures.minecraft.net/texture/76ebaa41d1d405eb6b60845bb9ac724af70e85eac8a96a5544b9e23ad6c96c62
+          slots: 19
+          name: '&6&l向 {direction} 导航'
+        refresh_move_right:
+          material: skin:http://textures.minecraft.net/texture/8399e5da82ef7765fd5e472f3147ed118d981887730ea7bb80d7a1bed98d5ba
+          slots: 27
+          name: '&6&l向 {direction} 导航'
+    size: 54
+    title: 领地地图
+  list_player_nations:
+    items:
+      default:
+        entry_nation:
+          lore:
+          - '&7你在这个国家被信任。'
+          - ' &8• &7领地：{lands}'
+          - ' &8• &7总区块：{chunks}'
+          - ' &8• &7总成员数：{members}'
+          - '&8✖ &7打开国家菜单。'
+          - '&8✖ &9右键点击'
+          - '   &7查看有关这个国家的一般信息。'
+          material: INHERIT
+          name: '&9&l{nation}'
+        entry_nation_edit:
+          lore:
+          - '&7这个国家被设置为你的主要国家'
+          - '&7通过 &3/lands edit &8<&3capital&8>&7。命令将被执行在这个国家。'
+          - '&8✖ &7打开国家菜单。'
+          - '&8✖ &9右键点击'
+          - '   &7查看有关这个国家的一般信息。'
+          material: skin:http://textures.minecraft.net/texture/eef425b4db7d62b200e89c013e421a9e110bfb27f2d8b9f5884d10104d00f4f4
+          name: '&9&l{nation}'
+        entry_nation_own:
+          lore:
+          - '&7你拥有这个国家。'
+          - ' &8• &7领地：{lands}'
+          - ' &8• &7区块：{chunks}'
+          - ' &8• &7总成员数：{members}'
+          - '&8✖ &7打开国家菜单。'
+          - '&8✖ &9右键点击'
+          - '   &7查看有关这个国家的一般信息。'
+          material: INHERIT
+          name: '&9&l{nation}'
+    title: '&8你的国家'
+  list_relation:
+    items:
+      default:
+        add:
+          lore:
+          - '   &7最大数量：{max}'
+          material: skin:http://textures.minecraft.net/texture/ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          name: '&8✖ &a&l增加'
+          slots: 40
+        add_nation:
+          lore:
+          - '&c所有关系由'
+          - '&c你所属的国家 &4{nation}&c 管理。'
+          material: skin:http://textures.minecraft.net/texture/ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          name: '&6&l由国家管理'
+          slots: 40
+        child_failure_max_allies:
+          lore:
+          - '&4{object} &c达到了最大数量的&4 {max} &c盟友。'
+          name: '&4&l已达到最大盟友数'
+        child_failure_max_enemies:
+          lore:
+          - '&4{object} &c已达到其最大限制'
+          - '&c敌人数量为&4{max}&c。'
+          name: '&4&l已达到最大敌人数量'
+        child_failure_nation:
+          lore:
+          - '&c所有关系由国家管理，'
+          - '&4{nation}&c，而你的领地是其中的一部分。'
+          name: '&4&l由国家管理'
+        child_failure_war:
+          lore:
+          - '&c在{object}参与即将或正在进行的与{enemy}的战争中，你无法管理此项。'
+          name: '&4&l即将来临或正在进行的战争'
+        child_war:
+          lore:
+          - '&c在{object}'
+          - '&c处于战争状态时，你不能这样做。'
+          name: '&c&l当前战争'
+        entry_ally:
+          lore:
+          - '&8✖ &3丢弃&8(Q键)'
+          - '   &7移除盟友。'
+          - '&7&l信息'
+          - ' &8• &7所有者：{owner}'
+          - ' &8• &7等级：{level}'
+          - ' &8✖ &bSHIFT + 左键点击'
+          - '    &7获取更多关于他们的信息。'
+          material: INHERIT
+          name: '&a&l盟友 {object}'
+        entry_enemy:
+          lore:
+          - '&8✖ &3丢弃&8(Q键)'
+          - '   &7发送中立提议。'
+          - '&7&l信息'
+          - ' &8• &7所有者：{owner}'
+          - ' &8• &7等级：{level}'
+          - ' &8✖ &bSHIFT + 左键点击'
+          - '    &7获取更多关于它们的信息。'
+          material: INHERIT
+          name: '&c&l敌人 {object}'
+        entry_offer_ally_receiver:
+          lore:
+          - '&8✖ &7接受这个联盟提议。'
+          - '   &7你将成为盟友。'
+          - '&8✖ &3丢弃&8(Q键)'
+          - '   &7拒绝这个提议。'
+          - '&7&l信息'
+          - ' &8• &7所有者：{owner}'
+          - ' &8• &7等级：{level}'
+          - ' &8✖ &bSHIFT + 左键点击'
+          - '    &7获取更多关于他们的信息。'
+          material: INHERIT
+          name: '&c&l{object}'
+        entry_offer_ally_sender:
+          lore:
+          - '&7如果他们接受了这个提议，你将与他们结盟。'
+          - '&8✖ &3丢弃&8(Q键)'
+          - '   &7撤销这个提议。'
+          - '&7&l信息'
+          - ' &8• &7所有者：{owner}'
+          - ' &8• &7等级：{level}'
+          - ' &8✖ &bSHIFT + 左键点击'
+          - '    &7获取更多关于他们的信息。'
+          material: INHERIT
+          name: '&c&l{object}'
+        entry_offer_neutral_receiver:
+          lore:
+          - '&8✖ &7接受这个中立化提议。'
+          - '   &7你将不再是敌人。'
+          - '&8✖ &3丢弃&8(Q键)'
+          - '   &7拒绝这个提议。'
+          - '&7&l信息'
+          - ' &8• &7所有者：{owner}'
+          - ' &8• &7等级：{level}'
+          - ' &8✖ &bSHIFT + 左键点击'
+          - '    &7获取更多关于他们的信息。'
+          material: INHERIT
+          name: '&c&l{object}'
+        entry_offer_neutral_sender:
+          lore:
+          - '&7如果他们接受了这个提议，你将对他们保持中立关系。'
+          - '&8✖ &3丢弃&8(Q键)'
+          - '   &7撤销这个提议。'
+          - '&7&l信息'
+          - ' &8• &7所有者：{owner}'
+          - ' &8• &7等级：{level}'
+          - ' &8✖ &bSHIFT + 左键点击'
+          - '    &7获取更多关于他们的信息。'
+          material: INHERIT
+          name: '&c&l{object}'
+        remove:
+          material: skin:http://textures.minecraft.net/texture/548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          name: '&8✖ &c&l移除'
+          slots: 42
+        remove_nation:
+          lore:
+          - '&c所有关系都由国家'
+          - '&4{nation}&c管理，你的领地是其中的一部分。'
+          material: skin:http://textures.minecraft.net/texture/548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          name: '&6&l由国家管理'
+          slots: 42
+    title: '&8关系'
+  list_rentables:
+    items:
+      default:
+        child_failure_cooldown:
+          lore:
+          - '&7你需要再等待&5 {time}'
+          - '&7然后才能再次传送到提供的位置。'
+          name: '&4&l冷却时间'
+        entry_area_buy:
+          lore:
+          - '&8• &7尺寸：{size} 方块'
+          - '&8• &7费用:&c {costs}'
+          - '&8• &7领地：{land}'
+          - '&8✖ &7传送'
+          material: INHERIT
+          name: '&a&l购买: &6 {area}'
+        entry_area_rent:
+          lore:
+          - '&8• &7大小：{size} 个方块'
+          - '&8• &7费用: &c{costs} &7每 &5{time}'
+          - '&8• &7最长时间：{max}'
+          - '&8• &7领地：{land}'
+          - '&8✖ &7传送'
+          - '&8✖ &7传送'
+          material: INHERIT
+          name: '&e&l出租: &6{area}'
+        entry_land_buy:
+          lore:
+          - '&8• &7费用:&c {costs}'
+          - '&8✖ &7传送'
+          material: INHERIT
+          name: '&a&l购买领地:&2 {land}'
+        refresh_sort:
+          lore:
+          - '&8✖ &7点击切换排序模式。'
+          material: HOPPER
+          name: '&7&l排序方式：{mode}'
+          slots: 41
+        refresh_type:
+          lore:
+          - '&8✖ &7显示要购买或出租的对象?'
+          material: COMPARATOR
+          name: '&7&l类型：{type}'
+          slots: 42
+    title: '&8可出租'
+  list_role_players:
+    items:
+      default:
+        entry_object:
+          lore:
+          - '&7这名玩家支持你的领地'
+          - '&7提供了&3{support} &7额外认领的领地。'
+          material: INHERIT
+          name: '&e&l{player}'
+          slots: 10-36
+    title: '&8玩家'
+  list_role_settings:
+    items:
+      default:
+        child_failure_access:
+          lore:
+          - '&c你没有权限在此区域编辑权限组。'
+          - ' &8• &7领地所有者可以授予你的权限组编辑权限。'
+          name: '&4&l不允许'
+        child_failure_allow-edit:
+          lore:
+          - '&c服务器配置了此开关'
+          - '&c对于此权限组不可切换。'
+          name: '&4&l开关无法切换'
+        child_failure_blacklist:
+          lore:
+          - '&c这个开关不能被国家切换。'
+          - ' &8• &7这个国家的每个领地都可以独立配置它。'
+          name: '&4&l由领地控制的开关'
+        child_failure_edit_owner:
+          lore:
+          - '&c你不能切换此开关以供你的'
+          - '&c所有者权限组使用。'
+          - ' &8• &7这可以防止你意外地'
+          - '   &7剥夺自己的权限。'
+          name: '&4&l所有者权限组'
+        child_failure_nation:
+          lore:
+          - '&c此权限组部分由国家&4 {nation}&c 管理。'
+          - ' &8• &7只有国家可以更改这个开关:'
+          - '   &e/nations menu'
+          name: '&4&l由国家管理的权限组'
+        child_failure_permission:
+          lore:
+          - '&c你没有权限'
+          - '&c在任何领地中切换此开关。'
+          name: '&4&l缺少权限'
+        child_failure_priority:
+          lore:
+          - '&c你没有权限编辑此权限组的设置。'
+          - ' &8• &7他的优先级高于你的或者你是和他的优先级相同。'
+          name: '&4&l权限组优先级'
+        entry_area_assign:
+          lore:
+          - '&8✖ &7允许此权限组创建区域'
+          - '   &7和调整区域大小吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: OAK_FENCE
+          name: '&6&l分配区域：{enabled}'
+        entry_attack_animal:
+          lore:
+          - '&8✖ &7允许此权限组攻击动物吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: BOW
+          name: '&6&l攻击动物：{enabled}'
+        entry_attack_monster:
+          lore:
+          - '&8✖ &7允许此权限组攻击怪物吗?'
+          - '    &8• &7如果禁用:'
+          - '      &7怪物也将无法攻击他们。'
+          - '   &7解锁状态：{unlocked}'
+          material: ZOMBIE_HEAD
+          name: '&6&l攻击怪物：{enabled}'
+        entry_attack_player:
+          lore:
+          - '&8✖ &7允许此权限组攻击其他玩家吗?'
+          - '    &8• &7战斗开关:'
+          - '      &7如果玩家在领地外攻击了另一个玩家，'
+          - '      &7可能仍然可以在领地内战斗。'
+          - '    &8• &7相互开关:'
+          - '      &7他们只能攻击那些也能攻击他们的玩家。'
+          - '   &7解锁状态：{unlocked}'
+          material: IRON_SWORD
+          name: '&6&l攻击玩家：{enabled}'
+        entry_balance_withdraw:
+          lore:
+          - '&8✖ &7允许此权限组从领地的银行取钱吗?'
+          - '    &8• &7命令：&e/lands withdraw'
+          - '   &7解锁状态：{unlocked}'
+          material: GOLD_NUGGET
+          name: '&6&l取款：{enabled}'
+        entry_block_break:
+          lore:
+          - '&8✖ &7允许此权限组破坏方块吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: IRON_PICKAXE
+          name: '&6&l破坏方块：{enabled}'
+        entry_block_ignite:
+          lore:
+          - '&8✖ &7允许此权限组点燃方块吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: FLINT_AND_STEEL
+          name: '&6&l点燃方块：{enabled}'
+        entry_block_place:
+          lore:
+          - '&8✖ &7允许此权限组放置方块吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: OAK_PLANKS
+          name: '&6&l放置方块：{enabled}'
+        entry_elytra:
+          lore:
+          - '&8✖ &7允许此权限组在此区域使用鞘翅进行飞行吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: ELYTRA
+          name: '&6&l使用鞘翅：{enabled}'
+        entry_ender_pearl:
+          lore:
+          - '&8✖ &7允许此权限组使用末影珍珠'
+          - '   &7和紫颂果传送到这个领地吗?'
+          - '    &7解锁状态：{unlocked}'
+          material: ENDER_PEARL
+          name: '&6&l使用末影珍珠：{enabled}'
+        entry_fly:
+          lore:
+          - '&8✖ &7允许此权限组在此区域飞行吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: FEATHER
+          name: '&6&l飞行：{enabled}'
+        entry_general_admin:
+          lore:
+          - '&8✖ &7点击切换:'
+          - '   &7解锁状态：{unlocked}'
+          - '    &8• &7描述:'
+          - '      {desc}'
+          - ' &8• &7这是一个管理员开关。它仅适用于管理员领地和&e/lands admin wilderness&7。'
+          material: INHERIT
+          name: '&6&l{flag}：{enabled}'
+        entry_general_player:
+          lore:
+          - '&8✖ &7点击切换:'
+          - '   &7解锁状态：{unlocked}'
+          - '    &8• &7描述:'
+          - '      {desc}'
+          material: INHERIT
+          name: '&6&l{flag}：{enabled}'
+        entry_harvest:
+          lore:
+          - '&8✖ &7允许此权限组收获作物、树苗、浆果、甘蔗等吗?'
+          material: WHEAT
+          name: '&6&l收获：{enabled}'
+        entry_interact_container:
+          lore:
+          - '&8✖ &7允许此权限组打开容器吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: CHEST
+          name: '&6&l打开容器：{enabled}'
+        entry_interact_door:
+          lore:
+          - '&8✖ &7允许此权限组打开门吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: IRON_DOOR
+          name: '&6&l打开门：{enabled}'
+        entry_interact_general:
+          lore:
+          - '&8✖ &7允许此权限组与未被其他开关覆盖的方块进行交互吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: STRING
+          name: '&6&l普通交互：{enabled}'
+        entry_interact_mechanism:
+          lore:
+          - '&8✖ &7允许此权限组使用红石机器，如杠杆等吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: REDSTONE
+          name: '&6&l使用红石：{enabled}'
+        entry_interact_trapdoor:
+          lore:
+          - '&8✖ &7允许此权限组打开活板门吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: OAK_TRAPDOOR
+          name: '&6&l打开活板门：{enabled}'
+        entry_interact_villager:
+          lore:
+          - '&8✖ &7允许此权限组与村民进行交易吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: EMERALD
+          name: '&6&l村民交易：{enabled}'
+        entry_item_pickup:
+          lore:
+          - '&8✖ &7允许此权限组从地上拾取物品吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: HOPPER
+          name: '&6&l拾取物品：{enabled}'
+        entry_land_claim:
+          lore:
+          - '&8✖ &7允许此权限组认领和取消认领这些领地的区块吗?'
+          - '    &7解锁状态：{unlocked}'
+          material: IRON_SHOVEL
+          name: '&6&l认领和取消认领：{enabled}'
+        entry_land_claim_border:
+          lore:
+          - '&8✖ &7允许此权限组在此领地的边界直接认领区块吗?'
+          - ' &7解锁状态：{unlocked}'
+          material: IRON_BARS
+          name: '&6&l在边界认领领地：{enabled}'
+        entry_land_enter:
+          lore:
+          - '&8✖ &7允许此权限组进入此区域吗?'
+          - '    &8• &7无论此开关是否开启，如果战斗开关开启并且'
+          - '      &7你正在战斗中，玩家可能仍然能够进入你的领地。'
+          - '   &7解锁状态：{unlocked}'
+          material: OAK_FENCE_GATE
+          name: '&6&l进入此区域：{enabled}'
+        entry_plant:
+          lore:
+          - '&8✖ &7允许此权限组种植作物、树苗、浆果、甘蔗等吗?'
+          - '    &7解锁状态：{unlocked}'
+          material: IRON_HOE
+          name: '&6&l种植：{enabled}'
+        entry_player_ban:
+          lore:
+          - '&8✖ &7允许此权限组封禁或解封玩家吗?'
+          - '    &8• &7他们将无法封禁比他们权限高的玩家。'
+          - '   &7解锁状态：{unlocked}'
+          material: BARRIER
+          name: '&6&l管理封禁：{enabled}'
+        entry_player_setrole:
+          lore:
+          - '&8✖ &7允许此权限组设置'
+          - '   &7受信任玩家的权限组吗?'
+          - '    &8• &7他们将无法编辑比他们'
+          - '      &7的权限组优先级高的权限组。'
+          - '   &7解锁状态：{unlocked}'
+          material: skin:http://textures.minecraft.net/texture/1e8ffbfd7890dfba8841166d688c93a88b6e8cac4d0260644cac9f3afd57c63e
+          name: '&6&l设置权限组：{enabled}'
+        entry_player_trust:
+          lore:
+          - '&8✖ &7允许此权限组信任其他玩家吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: skin:http://textures.minecraft.net/texture/ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          name: '&6&l信任玩家：{enabled}'
+        entry_player_untrust:
+          lore:
+          - '&8✖ &7允许此权限组取消信任玩家吗?'
+          - '    &8• &7他们将无法取消信任具有'
+          - '      &7较高权限组或处于同一权限组的玩家。'
+          - '   &7解锁状态：{unlocked}'
+          material: skin:http://textures.minecraft.net/texture/548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          name: '&6&l取消信任玩家：{enabled}'
+        entry_setting_edit_land:
+          lore:
+          - '&8✖ &7允许此权限组编辑自然开关吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: skin:http://textures.minecraft.net/texture/8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          name: '&6&l编辑自然开关：{enabled}'
+        entry_setting_edit_role:
+          lore:
+          - '&8✖ &7允许此权限组编辑权限组'
+          - '   &7设置并创建新权限组吗?'
+          - '    &8• &7他们将无法编辑自己的权限组开关。'
+          - '    &8• &7你应该只将此开关授予非常值得信任的玩家。'
+          - '   &7解锁状态：{unlocked}'
+          material: skin:http://textures.minecraft.net/texture/e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          name: '&6&l编辑权限组设置：{enabled}'
+        entry_setting_edit_taxes:
+          lore:
+          - '&8✖ &7允许此权限组编辑税费吗?'
+          - '    &8• &7你应该只将此权限授予非常值得信任的玩家。'
+          - '   &7解锁状态：{unlocked}'
+          material: GOLD_INGOT
+          name: '&6&l编辑税费：{enabled}'
+        entry_setting_edit_various:
+          lore:
+          - '&8✖ &7允许此权限组编辑杂项设置，如名称等吗?'
+          - '    &7解锁状态：{unlocked}'
+          material: NAME_TAG
+          name: '&6&l编辑杂项设置：{enabled}'
+        entry_shear:
+          lore:
+          - '&8✖ &7允许此权限组修剪绵羊、哞菇等吗?'
+          material: SHEARS
+          name: '&6&l修剪生物：{enabled}'
+        entry_spawn_set:
+          lore:
+          - '&8✖ &7允许此权限组更改出生点吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: ENDER_EYE
+          name: '&6&l设置出生点：{enabled}'
+        entry_spawn_teleport:
+          lore:
+          - '&8✖ &7允许此权限组传送到这个领地的出生点吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: ENDER_EYE
+          name: '&6&l传送到出生点：{enabled}'
+        entry_trample_farmland:
+          lore:
+          - '&8✖ &7允许此权限组踩坏耕地吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: FARMLAND
+          name: '&6&l踩坏耕地：{enabled}'
+        entry_vehicle_use:
+          lore:
+          - '&8✖ &7允许此权限组使用载具吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: MINECART
+          name: '&6&l使用载具：{enabled}'
+        entry_war_manage:
+          lore:
+          - '&8✖ &7允许此权限组宣布并管理你的领地的战争吗?'
+          - '   &7解锁状态：{unlocked}'
+          material: IRON_SWORD
+          name: '&6&l管理战争：{enabled}'
+        child_failure_cancelled:
+          name: '&4&lCancelled by Plugin'
+          lore:
+          - '&cToggling this flag has been'
+          - '&ccancelled by a 3rd party plugin.'
+    title: '&8开关'
+  list_war_lands:
+    items:
+      default:
+        entry_object:
+          lore:
+          - '{title}'
+          - '&8✖ &7查看有关此领地的信息。'
+          material: INHERIT
+          name: '&2&l{land}'
+        entry_object_ally:
+          lore:
+          - '{title}'
+          - '&8✖ &7查看关于这片领地的信息。'
+          material: INHERIT
+          name: '&a&l盟友 &2&l{land}'
+    title: '&8{team}'
+  main:
+    items:
+      default:
+        all-lands:
+          lore:
+          - '&8✖ &7查看该服务器上的所有领地。'
+          - '    &8• &7总数：{lands}'
+          material: skin:http://textures.minecraft.net/texture/c9c8881e42915a9d29bb61a16fb26d059913204d265df5b439b3d792acd56
+          name: '&2&l所有领地'
+          slots: 29
+        all-nations:
+          lore:
+          - '&8✖ &7查看该服务器上的所有国家。'
+          - '    &8• &7总数：{nations}'
+          material: skin:http://textures.minecraft.net/texture/cf40942f364f6cbceffcf1151796410286a48b1aeba77243e218026c09cd1
+          name: '&9&l所有国家'
+          slots: 30
+        flags:
+          lore:
+          - '&8✖ &7编辑个人设置。'
+          material: skin:http://textures.minecraft.net/texture/ec2ff244dfc9dd3a2cef63112e7502dc6367b0d02132950347b2b479a72366dd
+          name: '&6&l设置'
+          slots: 32
+        invites:
+          lore:
+          - '&8✖ &7查看你收到的邀请。'
+          - '   &8• &7邀请数量：{invites}'
+          material: WRITABLE_BOOK
+          name: '&6&l邀请'
+          slots: 13
+        lands:
+          lore:
+          - '&8✖ &7管理你所属的领地。'
+          - '    &8• &7拥有数：{own}'
+          - '    &8• &7信任数：{trusted}'
+          material: skin:http://textures.minecraft.net/texture/8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          name: '&2&l你的领地'
+          slots: 11
+        limitation:
+          lore:
+          - '&8• &7可创建&3 {ownlands} &7个领地:'
+          - '  &e/lands create'
+          - '&8• &7每个领地可认领&3 {chunks} &7个区块:'
+          - '  &e/lands claim'
+          - '&8• &7每个领地内可拥有&3 {members} &7个成员:'
+          - '  &e/lands trust'
+          - '&8• &7可加入&3 {lands} &7个领地:'
+          - '  &e/lands accept'
+          - '&8• &7支持信任你的领地，'
+          - '  &7并额外提供 &3{support-chunks} &7个可认领区块。'
+          material: INHERIT
+          name: '&6&l你的限制'
+          slots: 17
+        map:
+          lore:
+          - '&8✖ &7查看认领地图。'
+          material: MAP
+          name: '&6&l地图'
+          slots: 33
+        nations:
+          lore:
+          - '&8✖ &7查看你所属的国家。'
+          - '    &8• &7拥有数：{own}'
+          - '    &8• &7信任数：{trusted}'
+          material: skin:http://textures.minecraft.net/texture/45587da7fe7336e8ab9f791ea5e2cfc8a827ca959567eb9d53a647babf948d5
+          name: '&9&l你的国家'
+          slots: 12
+        rentable:
+          lore:
+          - '&8✖ &7查看设置为出租的区域以及'
+          - '   &7可以购买的土地。'
+          material: OAK_FENCE
+          name: '&6&l可出租'
+          slots: 31
+      patches:
+        basic:
+          all-lands:
+            slots: 22
+          flags:
+            slots: 24
+          lands:
+            slots: 20
+          limitation:
+            slots: 26
+    title: '&8主菜单'
+  nation:
+    items:
+      default:
+        child_failure_spawn_none:
+          lore:
+          - '&c首都尚未设置出生点。'
+          - ' &8• &7设置出生点:'
+          - '   &e/lands setspawn'
+          name: '&4&l找不到出生点'
+        child_failure_spawn_teleport:
+          lore:
+          - '&c你不被允许传送到首都的出生点。'
+          - '&8• &7首都的所有者可以授予你的权限组进行传送的权限。'
+          name: '&4&l不允许传送'
+        effects:
+          lore:
+          - '&8✖ &7设置在你的国家内生效的效果。效果可以通过国家等级进度来解锁。'
+          material: POTION
+          name: '&6&l效果'
+          slots: 31
+        inbox:
+          lore:
+          - '&8✖ &7打开高级视图。'
+          - '&7收到的消息:'
+          - '{inbox}'
+          material: skin:http://textures.minecraft.net/texture/6bf3fcdccffd963e4334818108e1e9ae3a80566d0d3d2d4ab3051a2cd811348c
+          name: '&6&l通知 &8(&7{amount}&8)'
+          slots: 13
+        lands:
+          lore:
+          - '&8✖ &7管理属于该国家的领地。'
+          material: skin:http://textures.minecraft.net/texture/8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          name: '&6&l领地'
+          slots: 11
+        level:
+          lore:
+          - '&8✖ &7查看等级进度和属性。'
+          material: EXPERIENCE_BOTTLE
+          name: '&6&l等级'
+          slots: 15
+        no-war:
+          lore:
+          - '&7你的国家目前没有参与任何战争。一切都很和平。'
+          material: WOODEN_SWORD
+          name: '&a&l和平'
+          slots: 12
+        relations:
+          lore:
+          - '&8✖ &7管理与其他领地和国家的关系。'
+          material: LIME_BANNER
+          name: '&6&l关系'
+          slots: 14
+        role:
+          lore:
+          - '&8✖ &7配置国家成员可以在该国家的每个领地上执行哪些操作。'
+          material: INHERIT
+          name: '&6&l国家权限组'
+          slots: 30
+        spawn:
+          lore:
+          - '&8✖ &7传送到首都的出生点。'
+          material: ENDER_PEARL
+          name: '&6&l出生点'
+          slots: 9
+        stats:
+          lore:
+          - '&7成员总数：{members}'
+          - '&6&l经济信息:'
+          - ' &8• &7国家余额：{balance}'
+          - '   &7国家支付维护费用&c {upkeep} &7在{upkeep_next}。'
+          - ' &8• &4你的领地 &8({land}&8)'
+          - '   &7向国家支付维护费用&c {upkeep_land} &7在{upkeep_next_land}。'
+          material: skin:http://textures.minecraft.net/texture/d01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f
+          name: '&6&l统计信息'
+          slots: 16
+        taxes:
+          lore:
+          - '&8✖ &7按照领地的大小对属于该国家的领地征税。'
+          material: GOLD_INGOT
+          name: '&6&l税费'
+          slots: 29
+        war:
+          lore:
+          - '&8✖ &7获取有关当前战争的信息。'
+          material: IRON_SWORD
+          name: '&c&l当前战争'
+          slots: 12
+    title: '&8{level} {nation}'
+  object_info:
+    items:
+      default:
+        created:
+          lore:
+          - '&5{date}'
+          material: CLOCK
+          name: '&6&l创建'
+          slots: 11
+        lands:
+          lore:
+          - '&e{lands}'
+          material: skin:http://textures.minecraft.net/texture/8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          name: '&6&l领地 &8(&7{amount}&8)'
+          slots: 13
+        level:
+          lore:
+          - '&8✖ &7点击查看等级信息。'
+          material: BEACON
+          name: '&6&l等级'
+          slots: 15
+        level_camp:
+          lore:
+          - '&c营地不能有任何等级。'
+          material: BEACON
+          name: '&6&l等级'
+          slots: 15
+        membership-request:
+          lore:
+          - '&8✖ &b左键点击'
+          - '   &7申请加入。'
+          - '&8✖ &9右键点击'
+          - '   &7撤销加入申请。'
+          material: BOOKSHELF
+          name: '&6&l申请加入'
+          slots: 33
+        membership-request_not-looking:
+          lore:
+          - '&c该领地暂时不需要新成员。'
+          material: BOOKSHELF
+          name: '&6&l申请加入'
+          slots: 33
+        players:
+          lore:
+          - '&e{players}'
+          material: skin:http://textures.minecraft.net/texture/e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          name: '&6&l玩家 &8(&7{amount}&8)'
+          slots: 13
+        relations:
+          lore:
+          - '&8✖ &7查看关系。'
+          material: LIME_BANNER
+          name: '&6&l关系'
+          slots: 29
+        war:
+          lore:
+          - ' &8• &7胜利：{won}'
+          - ' &8• &7失败：{lost}'
+          - '   &8= &7胜败比例:&3{wlr}'
+          - '&6&l击杀比例:'
+          - ' &8• &7击杀数：{kills}'
+          - ' &8• &7死亡数：{deaths}'
+          - '   &8= &7杀死比例:&3{kdr}'
+          - '&8• &7占领点：{captures}'
+          material: IRON_SWORD
+          name: '&6&l获胜率:'
+          slots: 31
+    title: '&8{object}'
+  object_info_relations:
+    items:
+      default:
+        allies:
+          lore:
+          - '&8✖ &7查看盟友。'
+          - '   &8• &7数量：{allies}'
+          material: LIME_BANNER
+          name: '&a盟友'
+          slots: 21
+        enemies:
+          lore:
+          - '&8✖ &7查看敌人。'
+          - '   &8• &7数量：{enemies}'
+          material: RED_BANNER
+          name: '&c&l敌人'
+          slots: 25
+    title: '&8关系'
+  player-management:
+    items:
+      default:
+        banned:
+          lore:
+          - '&8✖ &7管理被封禁的玩家。'
+          material: BARRIER
+          name: '&6&l已封禁'
+          slots: 22
+        invites:
+          lore:
+          - '&8✖ &7管理发出的邀请。'
+          material: WRITABLE_BOOK
+          name: '&6&l邀请'
+          slots: 24
+        members:
+          lore:
+          - '&8✖ &7管理成员。'
+          material: skin:http://textures.minecraft.net/texture/e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          name: '&6&l成员'
+          slots: 20
+        membership-requests:
+          lore:
+          - '&8✖ &7管理收到的加入申请。'
+          material: BOOKSHELF
+          name: '&6&l成员加入申请'
+          slots: 26
+        members_online:
+          material: CLOCK
+          slots: 32
+          name: '&6&lOnline Members'
+          lore:
+          - '&8✖ &7View members that are online.'
+    title: '&8玩家管理'
+  player_info:
+    items:
+      default:
+        areas:
+          lore:
+          - '&7这名玩家在这些领地的区域中受到信任&2 {land}&7:'
+          - '{areas}'
+          material: OAK_FENCE
+          name: '&6&l受信任的区域 &8(&7{amount}&8)'
+          slots: 26
+        lands:
+          lore:
+          - '{lands}'
+          material: OAK_SIGN
+          name: '&6&l领地 &8(&7{amount}&8)'
+          slots: 24
+        max-chunks:
+          lore:
+          - '&7如果该玩家是'
+          - '&7你领地的成员，他们将用 &3{chunks} &7个区块支持你的'
+          - '&7领地。'
+          material: skin:http://textures.minecraft.net/texture/8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          name: '&6&l支持认领'
+          slots: 22
+        time:
+          lore:
+          - '&8• &7上次在线:&5{seen}'
+          - '   &7离线自:&5{offline}'
+          - '&8• &7游戏时间:&5{playtime}'
+          material: CLOCK
+          name: '&6&l上次在线和游戏时间'
+          slots: 20
+    title: '&8玩家 {player}'
+  player_invite:
+    items:
+      default:
+        accept_owner:
+          lore:
+          - '&8✖ &7接受这个邀请。'
+          - '   &7税费：&c {tax}'
+          - '   &7维护费用:&c {upkeep}'
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a&l接受'
+          slots: 19-22
+        accept_trust:
+          lore:
+          - '&8✖ &7接受这个邀请。'
+          - '   &7税费：&c {tax}'
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a&l接受'
+          slots: 19-22
+        child_failure_banned:
+          lore:
+          - '&c你无法加入领地&4 {land} &c中的区域&4 {area}，因为他们已经将你封禁。'
+          name: '&4&你被封禁了'
+        child_failure_inviteOwner:
+          lore:
+          - '&c你无法加入这个领地。'
+          - ' &8• &7你不能同时拥有自己的领地并被信任加入另一个领地。'
+          name: '&4&l邀请所有者'
+        child_failure_lands:
+          lore:
+          - '&c你不能加入另一个领地。'
+          - ' &8• &7你已达到你可以被信任加入的领地数量的最大值&3 {max}。'
+          name: '&4&l最大领地数量'
+        child_failure_members:
+          lore:
+          - '&c无法在领地&4 {land}&c中信任你。'
+          - ' &8• &7他们已达到他们可以拥有的最大成员数&3 {max}。'
+          name: '&4&l最大成员数'
+        child_failure_war:
+          lore:
+          - '&c你目前无法加入领地&4{land}&c，因为他们正在参与即将开始的战争或正在进行战争。'
+          name: '&4&l参与战争中'
+        deny:
+          lore:
+          - '&8✖ &7拒绝这个邀请。'
+          material: RED_STAINED_GLASS_PANE
+          name: '&c&l拒绝'
+          slots: 24-27
+        info:
+          lore:
+          - ' &8• &7区域:&6 {area}'
+          - ' &8• &7领地:&2 {land}'
+          - ' &8• &7接收时间:&5 {time}'
+          - ' &8• &7发送者：{sender}'
+          material: OAK_SIGN
+          name: '&6&l信息'
+          slots: 23
+    title: '&8{land}'
+  relations:
+    items:
+      default:
+        allies:
+          lore:
+          - '&8✖ &7管理盟友。'
+          material: LIME_BANNER
+          name: '&a盟友'
+          slots: 20
+        enemies:
+          lore:
+          - '&8✖ &7管理敌人。'
+          material: RED_BANNER
+          name: '&c&l敌人'
+          slots: 22
+        offer_received:
+          lore:
+          - '&8✖ &7管理已经收到的申请。'
+          material: skin:http://textures.minecraft.net/texture/3b83bbccf4f0c86b12f6f79989d159454bf9281955d7e2411ce98c1b8aa38d8
+          name: '&6&l收到的申请'
+          slots: 26
+        offer_sent:
+          lore:
+          - '&8✖ &7管理已经发出的申请。'
+          material: skin:http://textures.minecraft.net/texture/3e4f2f9698c3f186fe44cc63d2f3c4f9a241223acf0581775d9cecd7075
+          name: '&6&l发送申请'
+          slots: 24
+    title: '&8关系'
+  role:
+    items:
+      default:
+        apply:
+          lore:
+          - '&8✖ &7该权限组包含的成员和开关'
+          - '   &7是否应该被添加到'
+          - '   &7新创建的区域中?'
+          material: OAK_FENCE
+          name: '&6&l自动加入新区域：{apply}'
+          slots: 14
+        apply_always:
+          lore:
+          - '&7该权限组包含的成员和开关'
+          - '&7始终被添加到新区域'
+          - '&7不能修改此权限组的'
+          - '&7这一设置。'
+          material: OAK_FENCE
+          name: '&6&l自动加入新区域'
+          slots: 14
+        child_failure_access:
+          lore:
+          - '&c你不被允许在此区域编辑权限组。'
+          - '&8• &7地主可以授予你的权限组编辑权限。'
+          name: '&4&l不允许'
+        child_failure_nation:
+          lore:
+          - '&c此权限组部分由你的国家管理。'
+          - '&c只有国家的首都可以更改此设置：&e/nations menu'
+          name: '&4&l权限组由国家管理'
+        child_failure_priority:
+          lore:
+          - '&c你不被允许编辑此权限组的设置。'
+          - '&8• &7它的优先级比你高，或者你是此权限组的成员。'
+          name: '&4&l权限组优先级'
+        icon:
+          lore:
+          - '&8✖ &7拖动一个物品到这里来改变'
+          - '   &7权限组图标。'
+          - '&8✖ &3丢弃&8(Q键)'
+          - '   &7重置为默认。'
+          material: INHERIT
+          name: '&6&l图标'
+          slots: 13
+        management:
+          lore:
+          - '&8✖ &7切换管理员开关，'
+          - '   &7如信任玩家、认领领地等。'
+          material: GOLD_INGOT
+          name: '&6&l管理开关'
+          slots: 30
+        members:
+          lore:
+          - '&8✖ &7查看所有权限组成员。'
+          material: skin:http://textures.minecraft.net/texture/e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          name: '&6&l权限组成员'
+          slots: 11
+        members_ally:
+          lore:
+          - '&7所有不受信任的玩家'
+          - '&7是盟友领地的一部分的'
+          - '&7都拥有此权限组。'
+          material: skin:http://textures.minecraft.net/texture/e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          name: '&6&l权限组成员'
+          slots: 11
+        members_nation:
+          lore:
+          - '&7所有未受信任的玩家，并且属于你的国家，都被分配了此权限组。'
+          material: skin:http://textures.minecraft.net/texture/e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          name: '&6&l权限组成员'
+          slots: 11
+        members_visitor:
+          lore:
+          - '&7所有不受信任的玩家'
+          - '&7都属于此权限组。'
+          material: skin:http://textures.minecraft.net/texture/e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          name: '&6&l权限组成员'
+          slots: 11
+        name:
+          lore:
+          - '&8✖ &7重命名此权限组。'
+          - '   &7当前：{name}'
+          material: NAME_TAG
+          name: '&6&l重命名'
+          slots: 12
+        settings:
+          lore:
+          - '&8✖ &7切换操作开关，如方块破坏、'
+          - '   &7容器打开等操作。'
+          material: IRON_PICKAXE
+          name: '&6&l操作开关'
+          slots: 29
+        taxes:
+          lore:
+          - '&8✖ &7此权限组的成员'
+          - '   &7是否需要缴纳税款?'
+          - '   &8• &7领地从这个区域的权限组收到了&c {taxes}'
+          - '   &8• &7领地从这个区域的权限组收到了&c {taxes}'
+          - '     &7的税款。时间:'
+          - '     &5{time}&7。'
+          material: GOLD_INGOT
+          name: '&6&l缴税：{current}'
+          slots: 15
+        taxes_never:
+          lore:
+          - '&7此权限组无法更改。'
+          material: GOLD_INGOT
+          name: '&6&l此权限组无需缴纳税款'
+          slots: 15
+        child_failure_nation_none:
+          lore:
+          - '&cThis role will be partly managed'
+          - '&cby the nation you may belong to in the future.'
+          - ' &8• &7You''re currently not part of any nation.'
+          name: '&4&lRole managed by Nation'
+    title: '&8{role}'
+  taxes:
+    items:
+      default:
+        child_failure_cooldown:
+          lore:
+          - '&c你目前无法更改税费金额。'
+          - '&8• &7你需要在&5{time}&7之后才能再次更改它。'
+          name: '&4&l你需要等待一段时间'
+        child_failure_value_max:
+          lore:
+          - '&c你不能将税费设置为高于&4{max}&c的金额。'
+          name: '&4&l已达到最大值'
+        child_failure_value_min:
+          lore:
+          - '&c你不能将税费设置为低于&4{min}&c的金额。'
+          name: '&4&l已达到最小值'
+        refresh_minus-1:
+          data:
+            modify: 500
+          material: REDSTONE
+          name: '&c&l减少 {value}'
+          slots: 20
+        refresh_minus-2:
+          data:
+            modify: 50
+          material: REDSTONE
+          name: '&c&l减少 {value}'
+          slots: 21
+        refresh_minus-3:
+          data:
+            modify: 1
+          material: REDSTONE
+          name: '&c&l减少 {value}'
+          slots: 22
+        refresh_plus-1:
+          data:
+            modify: 1
+          material: GLOWSTONE_DUST
+          name: '&a&l增加 {value}'
+          slots: 24
+        refresh_plus-2:
+          data:
+            modify: 50
+          material: GLOWSTONE_DUST
+          name: '&a&l增加 {value}'
+          slots: 25
+        refresh_plus-3:
+          data:
+            modify: 500
+          material: GLOWSTONE_DUST
+          name: '&a&l增加 {value}'
+          slots: 26
+        tax_area:
+          lore:
+          - '&7在 &5{time} &7内，你的领地将从'
+          - '&7该区域受信任的成员那里收取'
+          - '&7总共 &a{revenue} &7的税费。'
+          - '&8• &7时间间隔：{interval}'
+          - '&8• &7玩家只支付他们受信任的区域的税费。'
+          material: GOLD_INGOT
+          name: '&7&l税费：&a{tax}'
+          slots: 23
+        tax_nation:
+          lore:
+          - '&7在 &5{time} 内，你的国家将从'
+          - '&7该国家的领地中收取 &a{revenue} 的税费。'
+          - ' &8• &7时间间隔：{interval}'
+          - ' &8• &7此值设置每个区块的税费。'
+          - '  &7因此，较大的领地将需要支付更多的税费。'
+          material: GOLD_INGOT
+          name: '&7&l税费：&c{tax}'
+          slots: 23
+    title: '&8税费'
+  war:
+    items:
+      default:
+        child_failure_attacker:
+          lore:
+          - '&7进攻方在战争中根本不被允许投降。'
+          name: '&4&l无法投降'
+        child_failure_cost:
+          lore:
+          - '&c你 &8({object}&8) &c没有足够的马桶币来支付'
+          - '&c赔款&4 {tribute}&c。'
+          name: '&4&l资金不足'
+        child_failure_none:
+          lore:
+          - '&c敌人 {enemy} &c没有可以'
+          - '&c传送的领地。'
+          name: '&4&l无领地'
+        child_failure_permission:
+          lore:
+          - '&c你不能为&8({object}&8)&c执行此操作。'
+          - ' &8• &7所有者可以授权你执行此操作。'
+          - '   &7开关：{flag}'
+          name: '&4&l不允许'
+        child_failure_surrender:
+          lore:
+          - '&c敌人不允许你投降。'
+          - ' &8• &7这是因为他们没有设置赔款。他们可以在他们的战争菜单中设置赔款：&e/wars menu'
+          name: '&4&l投降被拒绝'
+        declaration_start:
+          lore:
+          - '&7战争将在&5 {time}&7后开始。'
+          - '&7在此期间，每支队伍都有时间进行准备。'
+          material: CLOCK
+          name: '&6&l开始'
+          slots: 15
+        recipe:
+          lore:
+          - '&7点击这里查看占领旗帜物品的合成配方。'
+          material: BEACON
+          name: '&6&l占领旗帜配方'
+          slots: 13
+        spawn:
+          lore:
+          - '&7传送到敌人的边界。'
+          material: ENDER_PEARL
+          name: '&6&l出生点'
+          slots: 9
+        tribute_attacker:
+          lore:
+          - '&8✖ &b左键点击'
+          - '   &7更改这场战争的赔款数值。'
+          - '    &8• &7&l如果赔款等于0:'
+          - '      &7防守方将无法投降。'
+          - '    &8• &7&l如果防守方投降:'
+          - '      &7防守方需要支付&c {tribute}'
+          - '      &7给你。'
+          - '&8✖ &9右键点击'
+          - '   &7如果你作为进攻方想要投降，你需要支付&c{tribute-att} &7给防守方。'
+          material: GOLD_INGOT
+          name: '&6&l赔款:&c {tribute}'
+          slots: 29
+        tribute_attacker_mutual:
+          lore:
+          - '&8✖ &7投降此战争'
+          - '   &7你需要支付&c {tribute-att}'
+          - '   &7作为向防守方的赔款。'
+          - '    &8• &7如果赔款等于0:'
+          - '      &7防守方将无法投降。'
+          - '    &8• &7&l如果防守方投降:'
+          - '      &7他们需要向你支付&c {tribute}'
+          - '      &7作为赔款。'
+          material: GOLD_INGOT
+          name: '&6&l赔款:&c {tribute}'
+          slots: 29
+        tribute_defender:
+          lore:
+          - '&8✖ &7在这场战争中投降'
+          - '    &8• &7你需要支付&c {tribute}'
+          - '      &7作为对进攻方的赔款。'
+          - '    &8• &7如果赔款等于0:'
+          - '      &7进攻方不接受投降。'
+          material: GOLD_INGOT
+          name: '&6&l投降:&c {tribute}'
+          slots: 29
+        war_points_declaration:
+          material: IRON_INGOT
+          slots: 13
+          lore:
+          - '&7A team needs&3 {points} &7points to win.'
+          - ' &8• &7Kill: &3{p_kill} point(s)'
+          - ' &8• &7Capture: &3{p_cap} point(s)'
+          - '    &8• &7To capture an enemy area, place'
+          - '      &7a capture flag inside it. You'
+          - '      &7can see the crafting recipe'
+          - '      &7for it in this menu.'
+          - ''
+          - ' &8• &7The war will start in:&5 {time}'
+          name: '&6&lPoint Distribution'
+        flags:
+          material: IRON_PICKAXE
+          slots: 14
+          name: '&6&lActive Flags'
+          lore:
+          - '&7Involved players can do the following'
+          - '&7things in affected lands:'
+          - '{settings}'
+        war_attackers:
+          material: IRON_SWORD
+          slots: 11
+        war_defenders:
+          material: SHIELD
+          slots: 12
+        war_points:
+          material: IRON_INGOT
+          slots: 13
+    title: '&8战争'
+  war-declaration_tribute:
+    items:
+      default:
+        cancel-declaration:
+          lore:
+          - '&8✖ &7取消这次宣战。'
+          material: skin:http://textures.minecraft.net/texture/548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          name: '&c&l取消宣战声明'
+          slots: 37
+        child_max-tribute:
+          lore:
+          - '&c你不能将赔款的价值设置得高于&c {max}&c。'
+          - ' &8• &7最大赔款的限制取决于敌人的余额。'
+          name: '&4&l已到达最大值'
+        refresh_minus-1:
+          data:
+            modify: 1000
+          material: REDSTONE
+          name: '&c&l减少 {value}'
+          slots: 20
+        refresh_minus-2:
+          data:
+            modify: 100
+          material: REDSTONE
+          name: '&c&l减少 {value}'
+          slots: 21
+        refresh_minus-3:
+          data:
+            modify: 1
+          material: REDSTONE
+          name: '&c&l减少 {value}'
+          slots: 22
+        refresh_plus-1:
+          data:
+            modify: 1
+          material: GLOWSTONE_DUST
+          name: '&a&l增加 {value}'
+          slots: 24
+        refresh_plus-2:
+          data:
+            modify: 100
+          material: GLOWSTONE_DUST
+          name: '&a&l增加 {value}'
+          slots: 25
+        refresh_plus-3:
+          data:
+            modify: 1000
+          material: GLOWSTONE_DUST
+          name: '&a&l增加 {value}'
+          slots: 26
+        send-declaration:
+          lore:
+          - '&8✖ &7发送这份宣战声明'
+          - '   &7给敌人。'
+          material: skin:http://textures.minecraft.net/texture/ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          name: '&a&l发送宣战声明'
+          slots: 45
+        tribute:
+          lore:
+          - '&7敌人将需要支付这个赔款'
+          - '&7以投降。'
+          - ' &8• &7&l最大赔款:&c {max}'
+          - '   &7这取决于敌人的余额。'
+          - ' &8• &7&l如果赔款设置为0:'
+          - '   &7敌人将无法投降。'
+          material: GOLD_INGOT
+          name: '&7&l赔款: &c {tribute}'
+          slots: 23
+    title: '&8赔款'
+  war_capture_recipe:
+    title: '&8占领旗帜配方'
+  rental_setup:
+    items:
+      default:
+        type:
+          material: OAK_SIGN
+          slots: 32
+          name: '&6&lType: {type}'
+          lore:
+          - '&8✖ &7Change between rental and sell.'
+        interval:
+          material: CLOCK
+          slots: 12
+          name: '&6&lInterval: {interval}'
+          lore:
+          - '&8✖ &7Tenants will pay&c {cost}&7 each for each&5 {interval}'
+          - '   &7for which they extend their rental.'
+        max-time:
+          material: CLOCK
+          slots: 16
+          name: '&6&lMax total Time: {max-time}'
+          lore:
+          - '&8✖ &7Change the max total time a player'
+          - '   &7can rent this area.'
+        cost_rental:
+          material: GOLD_INGOT
+          slots: 14
+          name: '&6&lCost per Interval:&c {cost}'
+          lore:
+          - '&8✖ &7Change how much a tenant pays'
+          - '   &7for every&5 {interval}&7.'
+        cost_sell:
+          material: GOLD_INGOT
+          slots: 14
+          name: '&6&lTotal Cost:&c {cost}'
+          lore:
+          - '&8✖ &7Change how much a buyer pays.'
+        confirm_rental:
+          material: LIME_STAINED_GLASS_PANE
+          slots: 45
+          name: '&a&lConfirm'
+          lore:
+          - '&8✖ &7Setup this area for rental.'
+          - '   &8• &7Interval:&5 {interval}'
+          - '   &8• &7Cost per {interval}:&c {cost}'
+          - '   &8• &7Max total time:&5 {max-time}'
+        confirm_sell:
+          material: LIME_STAINED_GLASS_PANE
+          slots: 45
+          name: '&a&lConfirm'
+          lore:
+          - '&8✖ &7Setup this area to be sold.'
+          - '   &8• &7Total cost:&c {cost}'
+    title: '{type} Setup'
+  select_time:
+    items:
+      default:
+        refresh_d_plus:
+          material: GLOWSTONE_DUST
+          slots: 24
+          data:
+            modify: 1
+          name: '&a&l+{value} day(s)'
+        refresh_h_plus:
+          material: GLOWSTONE_DUST
+          slots: 25
+          data:
+            modify: 1
+          name: '&a&l+{value} hour(s)'
+        refresh_m_plus:
+          material: GLOWSTONE_DUST
+          slots: 26
+          data:
+            modify: 5
+          name: '&a&l+{value} minute(s)'
+        refresh_d_minus:
+          material: REDSTONE
+          slots: 22
+          data:
+            modify: -1
+          name: '&c&l-{value} day(s)'
+        refresh_h_minus:
+          material: REDSTONE
+          slots: 21
+          data:
+            modify: -1
+          name: '&c&l-{value} hour(s)'
+        refresh_m_minus:
+          material: REDSTONE
+          slots: 20
+          data:
+            modify: -5
+          name: '&c&l-{value} minute(s)'
+        current:
+          material: CLOCK
+          slots: 23
+          name: '&6&lCurrent:&5 {time}'
+        confirm:
+          material: LIME_STAINED_GLASS_PANE
+          slots: 45
+          name: '&a&lConfirm'
+    title: Time
+  select_value:
+    items:
+      default:
+        refresh_plus-1:
+          material: GLOWSTONE_DUST
+          slots: 26
+          data:
+            modify: 1
+          name: '&a+{value}'
+        refresh_plus-2:
+          material: GLOWSTONE_DUST
+          slots: 25
+          data:
+            modify: 50
+          name: '&a+{value}'
+        refresh_plus-3:
+          material: GLOWSTONE_DUST
+          slots: 24
+          data:
+            modify: 500
+          name: '&a+{value}'
+        current:
+          material: GOLD_INGOT
+          slots: 23
+          name: '&6&lCurrent: {value}'
+        refresh_minus-3:
+          material: GLOWSTONE_DUST
+          slots: 22
+          data:
+            modify: -500
+          name: '&c-{value}'
+        refresh_minus-2:
+          material: GLOWSTONE_DUST
+          slots: 21
+          data:
+            modify: -50
+          name: '&c-{value}'
+        refresh_minus-1:
+          material: GLOWSTONE_DUST
+          slots: 20
+          data:
+            modify: -1
+          name: '&c-{value}'
+        confirm:
+          material: LIME_STAINED_GLASS_PANE
+          slots: 45
+          name: '&a&lConfirm'
+    title: Value
+  list_members_online:
+    items:
+      default:
+        refresh_toggle:
+          material: HOPPER
+          slots: 40
+          lore:
+          - '&8✖ &7Display only players which are'
+          - '   &7trusted in this area &8(&6{area}&8)&7?'
+          name: '&6&lView only Area: {current}'
+        entry_area_all:
+          material: INHERIT
+          name: '&e&l{player}'
+        entry_area:
+          material: INHERIT
+          name: '&e&l{player}'
+          lore:
+          - '&7Role: {role}'
+        entry_nation:
+          material: INHERIT
+          name: '&e&l{player}'
+    title: '&8Online Members'
+  list_wars:
+    items:
+      default:
+        entry_object:
+          material: IRON_SWORD
+          name: '{attacker}&7 vs. {defender}'
+          lore:
+          - ' &8• &7Progress:&3 {points} / {points_towin} &7points'
+          - '   {points_bar}'
+          - ''
+          - ' &8• &7Timeout: &5{timeout}'
+          - ' &8• &7Attacker: {attacker}'
+          - ' &8• &7Defender: {defender}'
+    title: '&8Active Wars'
+  war_info:
+    items:
+      default:
+        war_attackers:
+          material: IRON_SWORD
+          slots: 21
+        war_defenders:
+          material: SHIELD
+          slots: 23
+        war_points:
+          material: IRON_INGOT
+          slots: 25
+    title: '&8War Info'
+  mainblock:
+    items:
+      default:
+        land:
+          material: INHERIT
+          slots: 21
+          name: '&6&lLand'
+          lore:
+          - '&8✖ &7Open the land menu of&2 {land}&7.'
+        main:
+          material: skin:ad75fed3649f87a48e51169b57dcce6d4a8dc97db418f22d60d96c2a62b3e
+          slots: 23
+          name: '&6&lMain'
+          lore:
+          - '&8✖ &7Open the main menu.'
+          - '   &7Toggle personal settings, view'
+          - '   &7all lands of the server, etc.'
+        map:
+          material: MAP
+          slots: 25
+          name: '&6&lMap'
+          lore:
+          - '&8✖ &7Open the map menu.'
+        mainblock_reposition:
+          material: BELL
+          slots: 45
+          name: '&c&lEdit Mainblock'
+          lore:
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Remove or reposition the mainblock.'
+          - '    &8• &7Placing it again costs:&c {cost}'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7Toggle the hologram: {hologram}'
+        child_failure_mainblock_claim:
+          name: '&4&lNeeds to be placed inside Land'
+          lore:
+          - '&cThe mainblock must be placed inside the land.'
+          - '&7Please make sure you stand in the land&2 {land}&7.'
+        child_failure_mainblock_space:
+          name: '&4&lNot enough Space'
+          lore:
+          - '&cThere''s not enough space to place it at your current location.'
+    title: '&8{level_prefix}{land}'
+physical:
+  camp:
+    lore:
+    - '&7放置这个物品来创建一个临时的'
+    - '&7营地，在&5{time}&7后将被删除。'
+    - '&7半径:&3{radius}'
+    - '&7营地无法扩展。'
+    material: CAMPFIRE
+    name: '&2&l营地'
+  capture_flag:
+    lore:
+    - '&7在战争期间将此旗帜放在敌人领地上'
+    - 以占领它。
+    material: BEACON
+    name: '&2&l占领旗帜'
+  claim_block:
+    lore:
+    - '&7你可以在荒野中通过放置这个方块'
+    - '&7来认领一个区块。'
+    - '&7所有者:&3{owner}'
+    material: GRASS_BLOCK
+    name: '&2&l认领方块'
+  currency:
+    material: GOLD_INGOT
+    name: ' '
+  info:
+    lore:
+    - '&7使用这个工具来获取'
+    - '&7关于你所指向的认领的信息。'
+    material: FEATHER
+    name: '&2&l信息工具'
+  selection:
+    lore:
+    - '&7使用此工具创建一个选择区域。'
+    - '&7选择可用于:'
+    - ' &8- &e/claim'
+    - ' &8- &e/unclaim'
+    - ' &8- &e/assign'
+    material: GOLDEN_HOE
+    name: '&2选区工具'
+skull:
+  area:
+    default: DARK_OAK_FENCE
+    sub: OAK_FENCE

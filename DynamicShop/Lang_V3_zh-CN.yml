@@ -1,0 +1,555 @@
+'NULL': 'Null'
+EXP_POINTS: Exp Points
+JOB_POINTS: 职业点数
+PLAYER_POINTS: 玩家点数
+PALETTE_TITLE2: §3选择物品
+ROTATION_EDITOR_TITLE: §3轮转编辑器
+ROTATION_EDITOR:
+  ENABLED: §a已启用
+  DISABLED: §c已禁用
+  CLICK_TO_ENABLE: '§e左键: 启用'
+  CLICK_TO_DISABLE: '§e右键: 禁用'
+  CURRENT_TIME: '§f当前时间: '
+  CURRENTLY_IN_USE: §a[使用中]
+  NEXT_ROTATION: '§f下一轮转: '
+  PERIOD: §f周期
+  PERIOD_LORE_V2: '§e左键: -1h, 右键: +1h, Shift: x10'
+  TIMER: §fTimer adjustment
+  TIMER_LORE_V2: '§e左键: -10m, 右键: +10m, Shift: x6'
+  HOUR: §f{0}小时
+  UNSAVED_CHANGES: §c§o变更未保存
+  APPLY_CHANGES: §f应用变更
+  APPLY_CHANGES_LORE: |-
+    §e左键: 保存变更
+    §e右键: 重置变更
+  APPLY_ROTATION: '§e左键: 现在应用'
+  OPEN: '§e左键: 打开'
+  CREATE: '§e左键: 创建空'
+  COPY_AS_NEW: '§e右键: 复制为新'
+  DELETE: '§eShift 右键: §c删除'
+  REAPPLY: '§eShift 左键: 重新应用'
+  MOVE: '§e右键: 移动'
+PAID_VERSION:
+  DESC: '§fAvailable in paid version. '
+  GET_PREMIUM: Get Premium
+COLOR_PICKER_TITLE: §3颜色选择器
+SHOP_SETTING_TITLE: §3店铺设置
+ITEM_SETTING_TITLE: §3项目设置
+TRADE_TITLE: §3交易
+PAGE_EDITOR_TITLE: §3页面编辑器
+LOG_VIEWER_TITLE: §3日志查看器
+STOCK_SIMULATOR_TITLE: §3股票模拟器
+PALETTE_TITLE: §3选择要出售的商品
+QUICK_SELL_TITLE: §3快速出售
+'ON': 开启
+'OFF': 关闭
+SET: 设置
+UNSET: 未设置
+NULL(OPEN): 无 (对所有人开放)
+CUR_STATE: 当前状态
+CLICK: 点击
+LMB: 左键
+RMB: 右键
+CLOSE: §f关闭
+CLOSE_LORE: '§f§n点击: 关闭'
+START_PAGE:
+  EDITOR_TITLE: §3编辑图标
+  EDIT_NAME: §f更改名称
+  EDIT_LORE: §f更改知识
+  EDIT_ICON: §f更改图标
+  EDIT_ACTION: §f更改命令
+  SHOP_SHORTCUT: §f创建商店按钮
+  CREATE_DECO: §f创建装饰按钮
+  ENTER_SHOP_NAME: 请输入商店名称
+  DEFAULT_SHOP_LORE: §f§n点击：去商店
+  ITEM_MOVE_LORE: '§e鼠标右键: 移动'
+  ITEM_COPY_LORE: '§e鼠标右键: 复制'
+  ITEM_REMOVE_LORE: '§eshift鼠标左键: 移除'
+  ITEM_EDIT_LORE: '§eshift鼠标右键: 编辑'
+  REMOVE: §f移除
+  REMOVE_LORE: §f从起始页删除此按钮
+  ENTER_NAME: 为按钮输入新名称
+  ENTER_LORE: 输入按钮的新描述
+  ENTER_ICON: 输入要用作按钮图标的项目名称。（英语，不区分大小写）
+  ENTER_ACTION: 输入不带“/”的命令。该命令在按下按钮时执行按钮被按下了。
+  ENTER_COLOR: 输入装饰按钮的颜色。（英文）
+  SHOP_LIST_TITLE: §3店名
+  SHOP_LIST:
+    PAGE_TITLE: §f{curPage}/{maxPage} 页码
+    PAGE_LORE: |-
+      §eLMB:上一页
+      §eRMB:下一页
+SHOP:
+  BUY_PRICE_EXP: '§fBuy: {num}Exp'
+  SELL_PRICE_EXP: '§fSell: {num}Exp'
+  BUY_PRICE_DISCOUNTED_EXP: '§fBuy: §8§m{num}Exp§r §a{num2}Exp'
+  SELL_PRICE_DISCOUNTED_EXP: '§fSell: §8§m{num}Exp§r §c{num2}Exp'
+  CLICK_TO_ADD: '§eClick: Add'
+  TRADE_LIMIT_BUY: '§aPurchase limit: {num}left'
+  TRADE_LIMIT_SELL: '§aSales limit: {num}left'
+  TRADE_LIMIT_TIMER: '§aNext reset: {time}'
+  PURCHASE_LIMIT_PER_PLAYER: |-
+    §aPurchase limit: {num}left
+    §aNext reset: {time}
+  SALES_LIMIT_PER_PLAYER: |-
+    §aSales limit: {num}left
+    §aNext reset: {time}
+  BUY_PRICE_DISCOUNTED: '§fBuy: §8§m{num}§r §a{num2}'
+  SELL_PRICE_DISCOUNTED: '§fSell: §8§m{num}§r §c{num2}'
+  BUY_PRICE_PP: '§fBuy: {num}PP'
+  SELL_PRICE_PP: '§fSell: {num}PP'
+  BUY_PRICE_DISCOUNTED_PP: '§fBuy: §8§m{num}PP§r §a{num2}PP'
+  SELL_PRICE_DISCOUNTED_PP: '§fSell: §8§m{num}PP§r §c{num2}PP'
+  BUY_PRICE_JP: '§fBuy: {num}JP'
+  SELL_PRICE_JP: '§fSell: {num}JP'
+  BUY_PRICE_DISCOUNTED_JP: '§fBuy: §8§m{num}JP§r §a{num2}JP'
+  SELL_PRICE_DISCOUNTED_JP: '§fSell: §8§m{num}JP§r §c{num2}JP'
+  TRADE_LORE: §f§n点击：交易
+  BUY_PRICE: '§f购买: {num}'
+  SELL_PRICE: '§f出售: {num}'
+  STOCK: '§8库存: {num}'
+  STOCK_2: '§8库存/最大库存: {stock}/{max_stock}'
+  INF_STOCK: §8无限
+  STATIC_PRICE: §8[固定价格]
+  STACKS: §8{num} 堆叠
+  ITEM_MOVE_LORE: '§e鼠标右键: 移动'
+  ITEM_COPY_LORE: '§e鼠标右键: 复制'
+  ITEM_EDIT_LORE: '§eshift鼠标右键: 编辑'
+  DECO_DELETE_LORE: '§eshift鼠标右键: 移除'
+  PAGE_TITLE: §f{curPage}/{maxPage} 页码
+  PAGE_LORE_V2: |-
+    §f§nLMB: 上一页
+    §f§nRMB: 下一页
+    §7点击你的项目将
+    §7带你进入该项目
+    §7所在的页面。
+  GO_TO_PAGE_EDITOR: '§eShift鼠标右键: 页面编辑'
+  PAGE_EDIT_LORE: |-
+    §eshift鼠标左键:插入页面
+    §eshift鼠标右键:删除页面
+  ITEM_MOVE_SELECTED: 项目已选定，右键单击空白字段以移动它。
+  PERMISSION: '§f权限:'
+  PERMISSION_ITEM: §7 - {permission}
+  FLAGS: '§e标志:'
+  FLAGS_ITEM: §e - {flag}
+  SHOP_BAL_INF: §f无限制
+  SHOP_BAL: §f商店账户余额
+  SHOP_LOCATION: '§f商店位置: x {x}, y {y}, z {z}'
+  SHOP_LOCATION_B: '§f商店位置: '
+  SHOP_INFO_DASH: '§7 - '
+  DISABLED: §c禁用§8|§f
+  INCOMPLETE_DATA: 不完整数据
+  INCOMPLETE_DATA_Lore: "此项目对非op用户不可见。\n索引: "
+SHOP_SETTING:
+  TRADE_UI: §fEdit Trade UI
+  TRADE_UI_LORE_2: |-
+    §eLMB: Edit
+    §eRMB: Reset
+  BACKGROUND: §fBackground color
+  BACKGROUND_LORE: '§eClick: Change color'
+  SELECTED: §2Selected
+  CURRENCY: '§fCurrency Type: '
+  VAULT_LORE: §fThis is the default.
+  EXP_LORE: §fTrade with the player's experience points.
+  PLAYER_POINT_LORE: "§fTrade with player points. \n§fRequires 'Player point' plugin"
+  COMMAND_LORE3: '§eShift RMB: Delete last item'
+  COMMAND_TOGGLE: §fCommand
+  COMMAND_TOGGLE_LORE: |-
+    §fExecutes server commands
+    §fwhen a store transaction occurs.
+  COMMAND_SELL: §fSell Command
+  COMMAND_BUY: §fBuy Command
+  COMMAND_LORE1: '§eLMB: Set'
+  COMMAND_LORE2: '§eShift RMB: Delete'
+  LOG_PRINT_CONSOLE: §fPrint log to console
+  LOG_PRINT_ADMIN: §fPrint log to admin
+  ROTATION_EDITOR: '§fRotation: '
+  ROTATION_EDITOR_LORE: '§eClick: Rotation editor'
+  LOG_TOGGLE_LORE: §e鼠标右键:日志查看器
+  MAX_PAGE: §f最大页面
+  MAX_PAGE_LORE: §f为商店设置最大页面.
+  L_R_SHIFT: '§e左键: -1 右键: +1 Shift: x5'
+  FLAG: §f标志
+  SHOP_SETTINGS_LORE: §e右键：商店设置
+  SIGN_SHOP_LORE: §f只能通过木牌进入
+  LOCAL_SHOP_LORE: §f必须访问实际的门店位置
+  DELIVERY_CHARGE_LORE: §f您可以支付送货费用，而无需前往 交易地点.
+  JOB_POINT_LORE: "§f如果需要与工作点进行交易 \n§f需要“Jobs Reborn”插件"
+  SHOW_VALUE_CHANGE_LORE: §f显示价格变化量
+  HIDE_STOCK: §f隐藏库存
+  HIDE_PRICING_TYPE: §f隐藏定价类型
+  HIDE_SHOP_BALANCE: §f隐藏店铺账户余额
+  SHOW_MAX_STOCK: §f显示最大库存
+  HIDDEN_IN_COMMAND: |-
+    §f不展示此商店店
+    §f使用命令自动完成
+  INTEGER_ONLY: |-
+    §f购买价格将四舍五入
+    §f销售价格将四舍五入
+  PERMISSION: §f许可
+  STATE: §f状态
+  STATE_ENABLE: §a启用
+  STATE_DISABLE: §c禁用
+ITEM_SETTING:
+  TRADE_LIMIT_SELL: §fSales limit per player
+  TRADE_LIMIT_SELL_LORE: |-
+    §f{num}
+    §eLMB: -1, RMB: +1, Shift = x10
+  TRADE_LIMIT_BUY: §fPurchase limit per player
+  TRADE_LIMIT_BUY_LORE: |-
+    §f{num}
+    §eLMB: -1, RMB: +1, Shift = x10
+  DISCOUNT_LORE_2: |-
+    §fDiscount rate: {num}%
+    §eLMB: -10, RMB: +10
+  TRADE_LIMIT_AMOUNT: §fTrading volume limit per player
+  TRADE_LIMIT_AMOUNT_LORE: |-
+    §f{num}
+    §eLMB: -1, RMB: +1, Shift = x10
+  TRADE_LIMIT_INTERVAL: §fTrading volume limit reset cycle
+  TRADE_LIMIT_INTERVAL_LORE: |-
+    §fInterval: {interval}
+    §fNext reset: {time}
+    §eLMB: -1h, RMB: +1h, Shift = x12
+  TRADE_LIMIT_TIMER: §fAdjust Timer
+  TRADE_LIMIT_TIMER_LORE: |-
+    §f{num}
+    §fNext reset: {time}
+    §eLMB: -1h, RMB: +1h, Shift = x12
+  DISCOUNT: §fDiscount
+  DISCOUNT_LORE: |-
+    §fDiscount rate: {num}%
+    §eLMB: +10, RMB: -10
+  VALUE_BUY: '§f购买价值: '
+  VALUE_SELL: '§f销售价值: '
+  PRICE: '§f购买: '
+  SELL_PRICE: '§f出售: '
+  PRICE_MIN: '§f最低价格: '
+  PRICE_MAX: '§f最高价格: '
+  MEDIAN: '§f中位数: '
+  STOCK: '§f库存: '
+  MAX_STOCK: '§f最大库存: '
+  MAX_STOCK_LORE: |-
+    §f如果库存超过此值,
+    §f商店将拒绝购买
+  INF_STOCK: 无限库存
+  STATIC_PRICE: 固定价格
+  UNLIMITED: 无限制
+  MEDIAN_HELP: |-
+    §f中值越小，
+    §f价格变化越大
+  TAX_IGNORED: 销售税设置被忽略
+  RECOMMEND: §f应用推荐值
+  DONE: §f完成
+  DONE_LORE: §f完成!
+  ROUND_DOWN: §f向下取整
+  SET_TO_MEDIAN: §f设置为中值
+  SET_TO_STOCK: §f设置为库存
+  SET_TO_VALUE: §f设定价值
+  CLOSE: §f关闭
+  CLOSE_LORE: '§f§n点击: 关闭'
+  REMOVE: §c移除
+  REMOVE_LORE: §f从商店移除此物品
+  BUY: '§3§l购买: {num}'
+  SELL: '§3§l出售: {num}'
+TRADE:
+  QUANTITY_LORE: '§eShift RMB: Edit Quantity'
+  WAIT_FOR_INPUT: |-
+    Enter the quantity that will be displayed in the Trade UI.
+    Example: 1,2,4,8,16,32,64
+  PRICE_EXP: '§fBuy: {num}EXP'
+  SELL_PRICE_EXP: '§fSell: {num}EXP'
+  PRICE_DISCOUNTED_EXP: '§fBuy: §8§m{num}EXP§r §a{num2}EXP'
+  SELL_PRICE_DISCOUNTED_EXP: '§fSell: §8§m{num}EXP§r §c{num2}EXP'
+  PURCHASE_LIMIT_PER_PLAYER: |-
+    §aPurchase limit: {num}left
+    §aNext reset: {time}
+  SALES_LIMIT_PER_PLAYER: |-
+    §aSales limit: {num}left
+    §aNext reset: {time}
+  PRICE_DISCOUNTED: '§fBuy: §8§m{num}§r §a{num2}'
+  SELL_PRICE_DISCOUNTED: '§fSell: §8§m{num}§r §c{num2}'
+  PRICE_PP: '§fBuy: {num}PP'
+  SELL_PRICE_PP: '§fSell: {num}PP'
+  PRICE_DISCOUNTED_PP: '§fBuy: §8§m{num}PP§r §a{num2}PP'
+  SELL_PRICE_DISCOUNTED_PP: '§fSell: §8§m{num}PP§r §c{num2}PP'
+  PRICE_JP: '§fBuy: {num}JP'
+  SELL_PRICE_JP: '§fSell: {num}JP'
+  PRICE_DISCOUNTED_JP: '§fBuy: §8§m{num}JP§r §a{num2}JP'
+  SELL_PRICE_DISCOUNTED_JP: '§fSell: §8§m{num}JP§r §c{num2}JP'
+  TOGGLE_SELLABLE: §e点击：仅切换销售
+  TOGGLE_BUYABLE: §e点击：仅切换购买
+  BUY_ONLY_LORE: §f此物品不能出售
+  SELL_ONLY_LORE: §f此物品不能购买
+  BALANCE: §3我的余额
+  PRICE: '§f购买: {num}'
+  SELL_PRICE: '§f出售: {num}'
+  BUY: §c购买
+  SELL: §2出售
+  STOCK: '§8库存: '
+  STACKS: §8{num} 堆叠
+  INF_STOCK: §8无限的库存
+  SHOP_BAL_INF: §f无限制的
+  SHOP_BAL: "§3商店账户余额 \n§f{num}"
+  CLICK_TO_BUY: §c§n点击：购买 {amount}
+  CLICK_TO_SELL: §2§n点击：出售 {amount}
+PAGE_EDITOR:
+  EMPTY_SLOT_LORE: |-
+    §eLMB,RMB: Push
+    §e+Shift: Pull
+  PAGE_LORE_PREMIUM: |-
+    §eLMB: Open page
+    §eRMB: Swap
+    §eShift LMB: Insert
+    §eShift RMB: Delete
+  PREV: §f<<
+  NEXT: §f>>
+  PAGE_SWAP_SUCCESS: §f页面已被替换
+  PAGE_SWAP_FAIL: §f页面替换失败
+  PAGE_SWAP_SELECTED: §f已选择页面。右键单击其他页面以替换
+  PAGE_LORE: |-
+    §eLMB: 打开页面
+    §eRMB: 替换
+    §eShift LMB: 插入
+    §eShift RMB: 删除
+  PRICE: '§f购买价格: {num}'
+  SELL_PRICE: '§f出售: {num}'
+  STOCK: '§8库存: {num}'
+  STACKS: §8{num} 堆叠
+  STATIC_PRICE: §8[固定价格]
+  EMPTY: §8(空)
+LOG_VIEWER:
+  PAGE_TITLE: §f{curPage}/{maxPage} Page
+  PAGE_LORE: |-
+    §eLMB: Prev
+    §eRMB: Next
+  FILE_LORE: |-
+    §eLMB: Open
+    §eShift RMB: §cDelete
+  DATE: '§f日期: '
+  TIME: '§f时间: '
+  CURRENCY: '§f货币: '
+  PRICE: '§f价格: '
+  EXPAND: §f扩展
+  COLLAPSE: §f折叠
+LOG:
+  SELL: §f{player} sells {amount} {item} to {shop}
+  BUY: §f{player} buys {amount} {item} from {shop}
+  LOG: §f日志
+  CLEAR: §f日志已删除
+  SAVE: §f日志已保存
+  DELETE: §4删除日志
+STOCK_SIMULATOR:
+  CHANGE_SAMPLE_LORE: '§e左键, 右键: 更改项目'
+  SIMULATOR_BUTTON_LORE: '§e右键: 模拟器'
+  RUN_TITLE: §f运行
+  RUN_LORE: |-
+    §e左键: 运行模拟器
+    §e右键: 将设置应用于商店
+    §f项目不受影响
+  REAL_TIME: §a(实时)
+  AFTER_S: §a {0} 秒后
+  AFTER_M: §a {0} 分钟后
+  AFTER_H: §a {0} 小时后
+  AFTER_D: §a {0} 天后
+  L_R_SHIFT: '§e左键: -1 右键: +1 Shift: x5'
+  PRICE: '§f采购价格: {num}'
+  MEDIAN: '§f中位数: {num}'
+  STOCK: '§f库存: {num}'
+PALETTE:
+  ADD_ALL_LORE: |-
+    §eLMB: Add all
+    §eShift LMB: Add all and apply recommended values
+  LORE2: |-
+    §eLMB: Select
+    §eShift RMB: Search '{item}'
+  LORE_PREMIUM: |-
+    §eLMB: Add
+    §eShift LMB: Add after setting
+    §eRMB: Add as decoration
+    §eShift RMB: Search '{item}'
+  ADD_ALL_LORE_LOCKED: |-
+    §eLMB: Add all
+    §7Shift LMB: Add all and apply recommended values
+  LORE: |-
+    §e左键: 添加
+    §e右键: 添加为装饰
+  SEARCH: §f搜索
+  ADD_ALL: §f全部添加
+  PAGE_TITLE: §f{curPage}/{maxPage} 页码
+  PAGE_LORE: |-
+    §f§n左键: 上一页
+    §f§n右键: 下一页
+  FILTER_APPLIED: '§f已应用过滤器 : '
+  FILTER_LORE: |-
+    §e左键: 搜索
+    §e右键: 清除过滤器
+
+    §7查找“BLUE_WOOL”的示例:
+    §7 b w
+    §7 wool
+    §7 blue wool
+QUICK_SELL:
+  GUIDE_TITLE: §3§l快速出售指南
+  GUIDE_LORE: |-
+    §a左键点击你想出售的商品
+    §aShift加左键点击可销售相同类型的所有商品。
+    §a右键点击进入商品商店
+ARROW:
+  UP: §a⬆
+  DOWN: §c⬇
+  UP_2: §c⬆
+  DOWN_2: §a⬇
+TIME:
+  OPEN: 打开
+  CLOSE: 关闭
+  OPEN_LORE: §f设置打开时间。
+  CLOSE_LORE: §f设置关闭时间。
+  SHOPHOURS: §f营业时间
+  OPEN24: 24小时开放。
+  SHOP_IS_CLOSED: §f商店已经关门了，它将在 {time} 点开门.现在才 {curTime} 点哦。
+  SET_SHOPHOURS: 设定营业时间
+  CUR: '§f当前时间: {time}h'
+STOCK_STABILIZING:
+  SS: 库存稳定
+  L_R_SHIFT: §e左键 -0.1 右键 +0.1 Shift x5
+  STRENGTH_LORE_A: §fn% 中位数
+  STRENGTH_LORE_B: §fn% 与中位数的差距
+FLUCTUATION:
+  FLUCTUATION: §f库存变化
+  INTERVAL: §f间隔
+  INTERVAL_LORE: §f1h = 1000ticks = 现实时间 50s
+  STRENGTH: §f强度
+  STRENGTH_LORE: §fn% 与中位数
+TAX:
+  SALES_TAX: §f销售税
+  USE_GLOBAL: 使用全局设置 ({tax}%)
+  USE_LOCAL: 单独设置
+MESSAGE:
+  BUY_SUCCESS_EXP: '§fBought {item} x{amount} for {price}Exp Points. Balance: {bal}'
+  SELL_SUCCESS_EXP: '§fSold {item} x{amount} for {price}Exp Points. Balance: {bal}'
+  NOT_ENOUGH_EXP_POINT: '§fNot enough Exp points. balance: {bal}'
+  NO_ITEM_TO_SELL_2: §fThere are no items available for sale.
+  Q_SEARCH_FAIL_CURRENCY: This item is being traded in several currencies.
+  BUY_SUCCESS_PP: '§fBought {item} x{amount} for {price}points. Remaining points:
+    {bal}'
+  SELL_SUCCESS_PP: '§fSold {item} x{amount} for {price}points. Remaining points: {bal}'
+  NOT_ENOUGH_PLAYER_POINT: '§fNot enough player points. balance: {bal}'
+  ENTER_COMMAND_2: Enter in the form of 'index/command'.
+  SELL_COMMAND_CUR: 'Sell commands currently in effect:'
+  BUY_COMMAND_CUR: 'Buy commands currently in effect:'
+  ENTER_COMMAND: Enter the command without '/'.
+  ROTATION_SHARED_DATA_MISSING: §e[ ! ]§fThe required data could not be found in '{0}/SharedData.yml'
+    for {1} items. These items have been added as decoration.
+  SIGN_SHOP_CREATED: §aSign Shop created!
+  SEARCH_ITEM: §f输入您要查找的项目的名称
+  SEARCH_CANCELED: §f搜索已取消
+  INPUT_CANCELED: §f输入被取消
+  DELETE_CONFIRM: §f您确定要删除该页面吗？输入“delete”以删除。
+  CANT_DELETE_LAST_PAGE: §f不能删除最后一页
+  SHOP_BAL_LOW: §f这家商店没有足够的钱
+  SHOP_CREATED: 商店被创建!
+  SHOP_DELETED: 商店被删除!
+  OUT_OF_STOCK: §f缺货!
+  BUY_SUCCESS: '§f购买了 {item} x{amount} 花费了 {price}. 余额: {bal}'
+  SELL_SUCCESS: '§f出售了 {item} x{amount} 花费了 {price}. 余额: {bal}'
+  BUY_SUCCESS_JP: '§f购买了 {item} x{amount} 花费了 {price}点数. 剩余点数: {bal}'
+  SELL_SUCCESS_JP: '§f出售了 {item} x{amount} 花费了 {price}点数. 剩余点数: {bal}'
+  QSELL_NA: §f没有一家商店经营这种商品
+  DELIVERY_CHARGE: '§f送货费: {fee}'
+  DELIVERY_CHARGE_NA: §f这不能被送到另一个世界
+  NOT_ENOUGH_MONEY: '§f钱不够。余额: {bal}'
+  NOT_ENOUGH_POINT: '§f点券不够。余额: {bal}'
+  NO_ITEM_TO_SELL: §f没有要出售的物品
+  INVENTORY_FULL: §4您的库存中没有空位！
+  IRREVERSIBLE: §f这一行动是不可逆转的！
+  ITEM_ADDED: 添加物品！
+  ITEM_UPDATED: 物品更新！
+  ITEM_DELETED: 已删除项目！
+  CHANGES_APPLIED: '应用已更改. 新应用:'
+  CHANGES_APPLIED_2: 应用已更改
+  RECOMMEND_APPLIED: 推荐应用值，它基于 {playerNum} 玩家 可以在配置文件中更改此值。
+  TRANSFER_SUCCESS: 汇款完成
+  PURCHASE_REJECTED: 商店里这些东西太多了，卖不出去。
+  CLICK_YOUR_ITEM_START_PAGE: |-
+    点击库存中的某个商品，找到最划算的商店
+    LMB: 购买   RMB: 出售
+  MOVE_TO_BEST_SHOP_BUY: 移动到你能以最低价格买到 {item} 的商店
+  MOVE_TO_BEST_SHOP_SELL: 移动到你能以最高价格出售 {item} 的商店
+  SHOP_IS_CLOSED_BY_ADMIN: 该商店目前由服务器管理员关闭
+  SHOP_DISABLED: 此商店当前已禁用。非管理员用户不能使用它。你可以在商店设置中启用它。
+HELP:
+  ITEMINFO_USAGE: §fHold an item in your hand to learn about it.
+  ITEMINFO_REALNAME: '§7Real name: §3{item_realname}'
+  ITEMINFO_SIGN_NAME: '§7Sign name: §3{item_signname}'
+  TITLE: '§f帮助: {command} --------------------'
+  SHOP: 打开商店
+  CMD: 切换命令帮助的显示
+  CREATE_SHOP: 创建一个新店铺
+  CREATE_SHOP_2: |-
+    Permissions (can be changed later)
+       true: dshop.user.shop.shopName
+       false: Anyone can access (default)
+       Arbitrary value: Requires permission
+  DELETE_SHOP: 删除现有店铺
+  SHOP_ADD_HAND: 将手头的物品添加到商店
+  SHOP_ADD_ITEM: 将物品添加到商店
+  SHOP_EDIT: 编辑商店中的商品
+  PRICE: §7价格计算公式：中值*价值/库存
+  INF_STATIC: §7中值<0 == 固定价格     库存<0 == 无限库存
+  EDIT_ALL: 一次修改商店中的所有商品
+  EDIT_ALL_2: §c注意事项。不检查该值是否有效。
+  RELOAD: 重新加载插件
+  RELOADED: 插件重新加载
+  USAGE: 用法
+  ITEM_ALREADY_EXIST: |-
+    §7§o{item} 已在出售.
+       {info}
+       输入命令会修改该值
+  ITEM_INFO: |-
+    §7§o{item} 的当前设置:
+       {info}
+  REMOVE_ITEM: §f输入参数0将 §4删除§f 该商品从商店中。
+  QSELL: §f快速销售商品.
+  DELETE_OLD_USER: 删除长期不活动的用户数据
+  ACCOUNT: 设置商店的账户余额. -1 = 无限
+  SET_TO_REC_ALL: §c重置§e 商店中的所有商品设置设置为推荐值
+  SHOP_ENABLE: 启用或禁用店铺.
+ERR:
+  PLAYER_POINTS_NOT_FOUND: Could not find 'Player points'.
+  SHOP_NOT_EXIST: No shop with that name.
+  SIGN_WALL: Sign must be placed on wall.
+  SHOP_NULL: §eShop name cannot be null.
+  ITEMINFO_HAND_EMPTY: You need to hold an item.
+  SIGN_ITEM_INVALID: Invalid item. Use /ds iteminfo to find the name of the item on
+    the sign.
+  SIGN_ITEM_NOT_FOR_SALE: First you must add the item in the shop and then use it
+    on the sign.
+  NO_USER_ID: §6未找到玩家uuid，商店不可用
+  ITEM_NOT_EXIST: 商店中不存在该商品
+  ITEM_FORBIDDEN: 这是禁止物品
+  NO_PERMISSION: §e你没有权限
+  WRONG_USAGE: 错误的命令用法.
+  NO_EMPTY_SLOT: 商店里没有空位
+  WRONG_DATATYPE: 参数类型无效
+  VALUE_ZERO: 参数值必须大于0
+  WRONG_ITEM_NAME: 无效的项目名称
+  HAND_EMPTY: 你必须把物品拿在手里.
+  HAND_EMPTY2: §c§o你必须把物品拿在手里！
+  SHOP_NOT_FOUND: §f商店未找到
+  SHOP_EXIST: 已经存在一家同名商店
+  SIGN_SHOP_REMOTE_ACCESS: 商店只能通过木牌进入
+  LOCAL_SHOP_REMOTE_ACCESS: 只能亲自访问商店
+  MAX_LOWER_THAN_MIN: 最高价格必须大于最低价格
+  DEFAULT_VALUE_OUT_OF_RANGE: 基价必须介于最低价格和最高价格。
+  NO_RECOMMEND_DATA: 价值表中没有该项目的信息.yml file.
+  JOBS_REBORN_NOT_FOUND: 找不到 乔布斯重生.
+  SHOP_HAS_INF_BAL: '{shop} 是一个无限金币商店'
+  SHOP_DIFF_CURRENCY: 这两家商店使用不同的货币.
+  PLAYER_NOT_EXIST: 找不到该玩家.
+  SHOP_LINK_FAIL: 任何一家店铺都必须是真实账户
+  SHOP_LINK_TARGET_ERR: 目标商店必须有一个真实的帐户
+  NESTED_STRUCTURE: 禁止建立层次结构. (例如 aa-bb, bb-cc)
+  CREATIVE: §e您不能在创造模式下使用此命令，你没有权限。
+  FILE_CREATE_FAIL: §e文件创建失败
+  INVALID_TRANSACTION: 此交易不再有效，如果这个问题再次出现，请与服务器管理员联系
