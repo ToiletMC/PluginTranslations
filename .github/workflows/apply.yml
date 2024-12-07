@@ -21,6 +21,7 @@ jobs:
         run: |
           # 删除所有名字包含.ignore.的文件
           find ./translations/ -name "*.ignore.*" -delete
+          ls ./translations/CMI/Translations/
           # 上传翻译文件到服务器
           DIRS=("authserver_15000" "survival_10001" "missilewars_10002" "dungeun_10003")
           for dir in ${DIRS[@]}; do
