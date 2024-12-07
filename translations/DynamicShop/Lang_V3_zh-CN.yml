@@ -394,8 +394,8 @@ SHOP_SETTING:
   MAX_PAGE_LORE: §f设置商店的最大页数。
   PERMISSION: §f权限
   PLAYER_POINT_LORE: "§f使用玩家点数交易。\n§f需要'Player point'插件"
-  ROTATION_EDITOR: "§f旋转: "
-  ROTATION_EDITOR_LORE: "§e点击: 旋转编辑器"
+  ROTATION_EDITOR: "§f轮换: "
+  ROTATION_EDITOR_LORE: "§e点击: 轮换编辑器"
   SELECTED: §2已选
   SHOP_SETTINGS_LORE: "§e右键: 商店设置"
   SHOW_MAX_STOCK: §f显示最大库存。
