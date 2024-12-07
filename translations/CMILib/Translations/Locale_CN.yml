@@ -231,48 +231,48 @@ info:
   Delete: "&c删除"
   # Avoid adding color codes to the enchant name
   EnchantNames:
-    arrow_damage: 强力
-    arrow_fire: 火焰
+    arrow_damage: 力量
+    arrow_fire: 火矢
     arrow_infinite: 无限
-    arrow_knockback: 衝击
+    arrow_knockback: 冲击
     binding_curse: 绑定诅咒
-    breach: Breach
-    channeling: 唤雷
+    breach: 破甲
+    channeling: 引雷
     damage_all: 锋利
-    damage_arthropods: 截肢剋星
-    damage_undead: 不死剋星
-    density: Density
-    depth_strider: 深海漫游
+    damage_arthropods: 节肢杀手
+    damage_undead: 亡灵杀手
+    density: 致密
+    depth_strider: 深海探索者
     dig_speed: 效率
     durability: 耐久
-    fire_aspect: 燃烧
+    fire_aspect: 火焰附加
     frost_walker: 冰霜行者
-    impaling: 鱼叉
+    impaling: 穿刺
     knockback: 击退
-    loot_bonus_blocks: Fortune
-    loot_bonus_mobs: 掠夺
+    loot_bonus_blocks: 时运
+    loot_bonus_mobs: 抢夺
     loyalty: 忠诚
-    luck: 幸运
-    lure: 鱼饵
-    mending: 修补
-    multishot: 分裂箭矢
+    luck: 海之眷顾
+    lure: 饵钓
+    mending: 经验修补
+    multishot: 多重射击
     oxygen: 水下呼吸
-    piercing: 贯穿
+    piercing: 穿透
     protection_environmental: 保护
     protection_explosions: 爆炸保护
-    protection_fall: FallProtection
+    protection_fall: 摔落保护
     protection_fire: 火焰保护
-    protection_projectile: 投射物保护
-    quick_charge: 快速上弦
-    riptide: 波涛
-    silk_touch: 丝绸之触
-    soul_speed: 灵魂疾走
+    protection_projectile: 弹射物保护
+    quick_charge: 快速装填
+    riptide: 激流
+    silk_touch: 精准采集
+    soul_speed: 灵魂疾行
     sweeping_edge: 横扫之刃
-    swift_sneak: SWIFTSNEAK
-    thorns: 尖刺
+    swift_sneak: 迅捷潜行
+    thorns: 荆棘
     vanishing_curse: 消失诅咒
-    water_worker: 亲水性
-    wind_burst: Wind_burst
+    water_worker: 水下速掘
+    wind_burst: 风爆
   EntityType:
     allay: Allay
     area_effect_cloud: 滞留药水
