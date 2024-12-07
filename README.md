@@ -27,3 +27,9 @@
 ## 目录结构
 
 此仓库中的 `translations` 文件夹直接对应了服务器上的 `plugins` 文件夹。
+
+## 工作流介绍
+
+当 `translations` 文件夹有更新时，会运行工作流 `apply.yml`。
+
+此工作流会将 `translations` 文件夹中的所有语言文件上传到服务器的 `plugins` 文件夹中，等待服务器在夜间重启时生效。
