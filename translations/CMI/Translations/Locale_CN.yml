@@ -349,22 +349,22 @@ command:
   balance:
     help:
       args: (玩家名)
-      info: "&6查看自己或其他玩家的游戏币"
+      info: "&6查看自己或其他玩家的马桶币"
     info:
-      balance: "&6游戏币: &f[money]"
-      balanceOther: "&f[playerDisplayName] &6的游戏币: &f[money]"
+      balance: "&6马桶币: &f[money]"
+      balanceOther: "&f[playerDisplayName] &6的马桶币: &f[money]"
   baltop:
     help:
       args: (玩家名)
-      info: "&6查看游戏币排行榜"
+      info: "&6查看马桶币排行榜"
     info:
       # Set to empty field if you want to not show hover over message
       hover: "&2[playerName]"
       list: "&f[place]. &f[playerDisplayName]: &f[balance]"
       ownLine: "&2[place]. &2[playerDisplayName]: &2[balance]"
-      recalculating: "&2游戏币排行正在重新计算，请稍等几秒后重试"
-      topLine: "&6----- 游戏币排行榜 &6-----"
-      topLineHover: "&6服务器游戏币总量: &f[total]"
+      recalculating: "&2马桶币排行正在重新计算，请稍等几秒后重试"
+      topLine: "&6----- 马桶币排行榜 &6-----"
+      topLineHover: "&6服务器马桶币总量: &f[total]"
   ban:
     help:
       args: "[玩家名] (理由) (-s)"
@@ -1150,7 +1150,7 @@ command:
         - ""
       bossbar: "&f飞行能量 [charge][changeAmount]&7/&f[max]"
       buttonExp: "&6使用经验增加能量"
-      buttonMoney: "&6使用游戏币增加能量"
+      buttonMoney: "&6使用马桶币增加能量"
       changeAmount: "&6([amount]&6)"
       changed: "&6你的飞行能量已改变为：&f[charge]"
       charge: "&6当前能量: &f[charge]&6/&f[max]"
@@ -2127,7 +2127,7 @@ command:
       kitRemoved: "&6礼包 (&f[kitname]&6) 被移除"
       kits: "&6礼包: "
       mainMenu: "&6主菜单"
-      moneyCost: "&6花费游戏币: [cost]"
+      moneyCost: "&6花费马桶币: [cost]"
       renameCommandInfo: "&6输入新的礼包指令名称 或者输入 '&6cancel&6' 取消"
       renameConfigInfo: "&6输入新的礼包 config 名称 或者输入 '&6cancel&6' 取消"
       renamed: "&6已将礼包 &f[kitname] &6命名为 &f[newkitname]&6."
@@ -2567,7 +2567,7 @@ command:
   pay:
     help:
       args: "[玩家名] [金额] (-s)"
-      info: "&6进行游戏币交易"
+      info: "&6进行马桶币交易"
   ping:
     help:
       args: (playerName/message)
@@ -2776,7 +2776,7 @@ command:
       requiredMcmmoList: " &f[color][name]"
       requiredMcmmoListHover: " &f[color][current]&6/&f[needed]"
       requiredMcmmoPower: mcmmo能量
-      requiredMoney: " &6游戏币: [color][current]&6/&f[needed]"
+      requiredMoney: " &6马桶币: [color][current]&6/&f[needed]"
       requiredPerm: " &6权限: "
       requiredPlaceholder: " &eCustom: "
       requiredPlaceholderHover: "&e[color][current]&e/&6[needed]"
@@ -3157,7 +3157,7 @@ command:
         &6将从本地文件中搜索背包
         &6这将花费更长时间
       location:
-        PlayerVault: "&6玩家游戏币"
+        PlayerVault: "&6玩家马桶币"
         ender: "&3末影箱"
         inv: "&6背包"
         invS: "&6潜影盒"
@@ -3182,7 +3182,7 @@ command:
     info:
       close: "&8放置你要出售的商品"
       sellInfo: "&8出售价格: &2[price]"
-      total: "&6你出售了 &f[amount] &6件物品并赚到了 &f[total] &6游戏币，当前游戏币 &f[balance]"
+      total: "&6你出售了 &f[amount] &6件物品并赚到了 &f[total] &6马桶币，当前马桶币 &f[balance]"
   sendall:
     help:
       args: "[serverName]"
