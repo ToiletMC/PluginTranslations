@@ -442,21 +442,21 @@ STOCK_SIMULATOR:
   AFTER_H: §a{0}小时后
   AFTER_M: §a{0}分钟后
   AFTER_S: §a{0}秒后
-  CHANGE_SAMPLE_LORE: "§eLMB, RMB: 更换物品"
-  L_R_SHIFT: "§eLMB: -1 RMB: +1 Shift: x5"
+  CHANGE_SAMPLE_LORE: "§e左键, 右键: 更换物品"
+  L_R_SHIFT: "§e左键: -1 右键: +1 Shift: x5"
   MEDIAN: "§f中位数: {num}"
   PRICE: "§f购买价格: {num}"
   REAL_TIME: §a(实时)
   RUN_LORE: |-
-    §eLMB: 运行模拟
-    §eRMB: 将设置应用到商店
+    §e左键: 运行模拟
+    §e右键: 将设置应用到商店
     §f物品不会受到影响。
   RUN_TITLE: §f运行
-  SIMULATOR_BUTTON_LORE: "§eRMB: 模拟器"
+  SIMULATOR_BUTTON_LORE: "§e右键: 模拟器"
   STOCK: "§f库存: {num}"
 STOCK_SIMULATOR_TITLE: §3库存模拟器
 STOCK_STABILIZING:
-  L_R_SHIFT: "§eLMB: -0.1 RMB: +0.1 Shift: x5"
+  L_R_SHIFT: "§e左键: -0.1 右键: +0.1 Shift: x5"
   SS: §f库存稳定
   STRENGTH_LORE_A: §fn% 的中位数
   STRENGTH_LORE_B: §fn% 的与中位数的差距
@@ -492,7 +492,7 @@ TRADE:
   PURCHASE_LIMIT_PER_PLAYER: |-
     §a购买限制: {num}剩余
     §a下次重置: {time}
-  QUANTITY_LORE: "§eShift RMB: 编辑数量"
+  QUANTITY_LORE: "§eShift 右键: 编辑数量"
   SALES_LIMIT_PER_PLAYER: |-
     §a销售限制: {num}剩余
     §a下次重置: {time}
